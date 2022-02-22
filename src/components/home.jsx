@@ -12,16 +12,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 export default function Home() {
-  const [index, setIndex] = React.useState(0);
-
-  React.useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
-
   const pad = {
     paddingTop: window.innerHeight / 3,
   };

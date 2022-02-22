@@ -1,7 +1,4 @@
 import React from "react";
-
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
