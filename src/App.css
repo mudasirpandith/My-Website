@@ -3,12 +3,17 @@
   color: #6f6f6f;
   background: linear-gradient(90deg, white 24%, rgba(218, 218, 218, 1) 24%);
 }
-
-.cv-btn {
-  margin-top: -20px;
-  margin-left: 18%;
+.profile-pik {
+  width: 200px;
+  height: auto;
+  border: WHITE solid;
+  border-radius: 50%;
 }
-
+a {
+  padding: 15px 15px 25px 15px;
+  margin-bottom: 20px;
+  color: #6f6f6f;
+}
 .skill-box {
   color: #6f6f6f;
 }
@@ -21,6 +26,8 @@
 .project-box {
   color: #6f6f6f;
 }
-.project-images {
-  width: 50%;
+
+footer {
+  background-color: rgba(218, 218, 218, 1);
+  padding: 30px;
 }

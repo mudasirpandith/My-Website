@@ -40,7 +40,6 @@ export default function Skill() {
           style={{ margin: "2px" }}
           icon={<FaceIcon />}
           label="Flutter/Dart"
-          variant="outlined"
         />
         <Chip
           style={{ margin: "2px" }}
