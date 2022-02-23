@@ -21,91 +21,53 @@ export default function Home() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid
-          className="profile-box"
-          style={{ height: window.innerHeight }}
-          container
-          spacing={2}
-        >
-          <Grid xl={12} xs={12}>
-            {" "}
-            <center>
-              <img
-                className="profile-pik"
-                style={{ height: "300px", width: "auto" }}
-                src={Profile}
-                alt="profile"
-              />
-              <center>
-                <h1 style={{ display: "inline-block" }}>
-                  {" "}
-                  <Typewriter
-                    options={{
-                      strings: [
-                        " I'm Mudasir Pandith",
-                        "I'm Full Stack Developer",
-                        "Freelancer",
-                      ],
-                      cursorClassName: "Typewriter__dash",
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />{" "}
-                </h1>
-                <p>
-                  {" "}
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-                  distinctio aliquid, non tempora praesentium est saepe ut
-                  assumenda possimus velit qui ipsam. Ab eveniet, ipsam laborum
-                  alias deserunt voluptates corporis! Lorem ipsum dolor sit amet
-                  consectetur,
-                </p>
-                <a href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
-                  <LinkedInIcon />
-                </a>
-                <a href="https://github.com/mudasirpandith">
-                  <GitHubIcon />
-                </a>
-                <a href="mailto:mudasirpandith789@gmail.com">
-                  <EmailIcon />
-                </a>{" "}
-                <br />
-                <Button color="inherit" variant="contained">
-                  View Resume
-                </Button>
-              </center>
-            </center>
-          </Grid>
-          {/* <Grid xl={6} xs={12}>
-            {" "}
-            <center>
-              {/* <img style={{ height: "400px" }} src={Profile} alt="profile" /> }
-            </center>
-            <p>
+      <div
+        className="profile-box"
+        style={{ height: window.innerHeight }}
+        container
+        spacing={2}
+      >
+        {" "}
+        <center>
+          <img
+            className="profile-pik"
+            style={{ height: "300px", width: "auto", paddingTop: "70px" }}
+            src={Profile}
+            alt="profile"
+          />
+          <center>
+            <h1 style={{ display: "inline-block" }}>
               {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-              distinctio aliquid, non tempora praesentium est saepe ut assumenda
-              possimus velit qui ipsam. Ab eveniet, ipsam laborum alias deserunt
-              voluptates corporis! Lorem ipsum dolor sit amet consectetur,
-            </p>
-            <br />
-            <a href="/">
+              <Typewriter
+                options={{
+                  strings: [
+                    " I'm Mudasir Pandith",
+                    "I'm Full Stack Developer",
+                    "Freelancer",
+                  ],
+                  cursorClassName: "Typewriter__dash",
+                  autoStart: true,
+                  loop: true,
+                }}
+              />{" "}
+            </h1>
+            <p> Loading...</p>
+            <a href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
               <LinkedInIcon />
             </a>
-            <a href="/">
+            <a href="https://github.com/mudasirpandith">
               <GitHubIcon />
             </a>
-            <a href="/">
+            <a href="mailto:mudasirpandith789@gmail.com">
               <EmailIcon />
-            </a>
-            <Button color="inherit" variant="contained">
-              Download CV
-            </Button>
+            </a>{" "}
             <br />
-          </Grid> */}
-        </Grid>
-      </Box>
+            <Button color="inherit" variant="contained">
+              View Resume
+            </Button>
+          </center>
+        </center>
+      </div>
 
       <Skill />
       <Education />
