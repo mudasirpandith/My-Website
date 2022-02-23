@@ -22,7 +22,7 @@ export default function Skill() {
           label="C/C++"
           variant="outlined"
         />
-        <Chip style={{ margin: "2px" }} icon={<FaceIcon />} label="HTML/CSS" />
+        <Chip style={{ margin: "2px" }} icon={<FaceIcon />} label="MERN" />
         <Chip
           style={{ margin: "2px" }}
           icon={<FaceIcon />}
@@ -36,15 +36,29 @@ export default function Skill() {
           label="Python"
           variant="outlined"
         />
+        <Chip style={{ margin: "2px" }} icon={<FaceIcon />} label="Bootstrap" />
+        <Chip
+          style={{ margin: "2px" }}
+          icon={<FaceIcon />}
+          label="HTML"
+          variant="outlined"
+        />
+        <Chip style={{ margin: "2px" }} icon={<FaceIcon />} label="CSS" />
         <Chip
           style={{ margin: "2px" }}
           icon={<FaceIcon />}
           label="Flutter/Dart"
+          variant="outlined"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<FaceIcon />}
-          label="MERN"
+          label="Express.js"
+        />
+        <Chip
+          style={{ margin: "2px" }}
+          icon={<FaceIcon />}
+          label="Flutter/Dart"
           variant="outlined"
         />
       </div>

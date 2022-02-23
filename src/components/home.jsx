@@ -33,7 +33,7 @@ export default function Home() {
             <center>
               <img
                 className="profile-pik"
-                style={{ height: "400px" }}
+                style={{ height: "300px", width: "auto" }}
                 src={Profile}
                 alt="profile"
               />
@@ -42,7 +42,11 @@ export default function Home() {
                   {" "}
                   <Typewriter
                     options={{
-                      strings: [" I'm Mudasir Pandith", "I'm Web Developer"],
+                      strings: [
+                        " I'm Mudasir Pandith",
+                        "I'm Full Stack Developer",
+                      ],
+                      cursorClassName: "Typewriter__dash",
                       autoStart: true,
                       loop: true,
                     }}
@@ -56,18 +60,18 @@ export default function Home() {
                   alias deserunt voluptates corporis! Lorem ipsum dolor sit amet
                   consectetur,
                 </p>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
                   <LinkedInIcon />
                 </a>
-                <a href="/">
+                <a href="https://github.com/mudasirpandith">
                   <GitHubIcon />
                 </a>
-                <a href="/">
+                <a href="mailto:mudasirpandith789@gmail.com">
                   <EmailIcon />
                 </a>{" "}
                 <br />
                 <Button color="inherit" variant="contained">
-                  Download CV
+                  View Resume
                 </Button>
               </center>
             </center>

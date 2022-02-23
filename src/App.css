@@ -1,12 +1,12 @@
 .profile-box {
   padding: 20px;
   color: #6f6f6f;
+
   background: linear-gradient(90deg, white 24%, rgba(218, 218, 218, 1) 24%);
 }
 .profile-pik {
   width: 200px;
   height: auto;
-  border: WHITE solid;
   border-radius: 50%;
 }
 a {
@@ -25,7 +25,12 @@ a {
 .project-box {
   color: #6f6f6f;
 }
-
+li {
+  padding: 10px;
+}
+ul {
+  list-style: none;
+}
 footer {
   background-color: rgba(218, 218, 218, 1);
   padding: 30px;
