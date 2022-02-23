@@ -61,6 +61,7 @@ export default function Skill() {
           label="Flutter/Dart"
           variant="outlined"
         />
+        <Chip style={{ margin: "2px" }} icon={<FaceIcon />} label="Firebase" />
       </div>
     </>
   );

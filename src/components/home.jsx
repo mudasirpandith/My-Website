@@ -45,6 +45,7 @@ export default function Home() {
                       strings: [
                         " I'm Mudasir Pandith",
                         "I'm Full Stack Developer",
+                        "Freelancer",
                       ],
                       cursorClassName: "Typewriter__dash",
                       autoStart: true,

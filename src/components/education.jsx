@@ -23,7 +23,7 @@ export default function Eduaction() {
       <div className="education-box">
         <Box sx={{ flexGrow: 1 }}>
           <Grid container>
-            <Grid xs={12} xl={6}>
+            <Grid xs={12} md={6} xl={6}>
               <h1>Education</h1>
               <Accordion
                 expanded={expanded === "panel1"}
@@ -93,7 +93,7 @@ export default function Eduaction() {
                 </AccordionDetails>
               </Accordion>
             </Grid>
-            <Grid xs={12} xl={6}>
+            <Grid xs={12} md={6} xl={6}>
               <h1>Address</h1>
               <ul>
                 <li>
