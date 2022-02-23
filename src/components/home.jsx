@@ -1,6 +1,4 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 import { Button } from "@mui/material";
 import Profile from "../images/profile.jpg";
 import Skill from "./skills";
@@ -42,10 +40,10 @@ export default function Home() {
                 options={{
                   strings: [
                     " I'm Mudasir Pandith",
-                    "I'm Full Stack Developer",
-                    "Freelancer",
+                    "I'm a Full Stack Developer ",
+                    "I'm a Freelancer",
                   ],
-                  cursorClassName: "Typewriter__dash",
+
                   autoStart: true,
                   loop: true,
                 }}
@@ -62,16 +60,25 @@ export default function Home() {
               <EmailIcon />
             </a>{" "}
             <br />
-            <Button color="inherit" variant="contained">
-              View Resume
-            </Button>
+            <a href="https://drive.google.com/file/d/1i8clSs9x_yIq-crd4mnmShmJXeXAh5MQ/view">
+              <Button color="inherit" variant="contained">
+                View Resume
+              </Button>
+            </a>{" "}
           </center>
         </center>
       </div>
-
+      <br />
+      <br />
       <Skill />
+      <br />
+      <br />
       <Education />
+      <br />
+      <br />
       <Projects />
+      <br />
+      <br />
       <About />
     </>
   );
