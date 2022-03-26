@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SchoolSharpIcon from "@mui/icons-material/SchoolSharp";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+
 export default function Eduaction() {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -20,6 +21,7 @@ export default function Eduaction() {
   };
   return (
     <>
+      {" "}
       <div className="education-box">
         <Box sx={{ flexGrow: 1 }}>
           <Grid container>
@@ -28,14 +30,10 @@ export default function Eduaction() {
               <Accordion
                 expanded={expanded === "panel1"}
                 onChange={handleChange("panel1")}
-
-                style={{backfaceVisibility:"0"}}
+                style={{ backfaceVisibility: "0" }}
               >
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                
-                  >
-                  <Typography >
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography>
                     <h4>
                       {" "}
                       <div

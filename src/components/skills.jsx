@@ -7,88 +7,109 @@ export default function Skill() {
     <>
       <div className="skill-box">
         <h1>Skills</h1>
-
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
+          color="warning"
           label="Reactjs"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="Nodejs"
-          variant="outlined"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="MongoDb"
+          color="warning"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="C/C++"
-          variant="outlined"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="MERN"
+          color="warning"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="JavaScript"
-          variant="outlined"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
-          label="Git"
+          label="Git/Github"
+          color="warning"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="Python"
-          variant="outlined"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="Bootstrap"
+          color="warning"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="HTML"
-          variant="outlined"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="CSS"
+          color="warning"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarHalfSharpIcon fontSize="small" />}
-          label="Flutter/Dart"
-          variant="outlined"
+          label="Flutter"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="Express.js"
+          color="warning"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarPurple500SharpIcon fontSize="small" />}
           label="OOP"
-          variant="outlined"
+          color="success"
+          variant="contained"
         />
         <Chip
           style={{ margin: "2px" }}
           icon={<StarHalfSharpIcon fontSize="small" />}
           label="Firebase"
+          color="warning"
+        />{" "}
+        <Chip
+          style={{ margin: "2px" }}
+          icon={<StarPurple500SharpIcon fontSize="small" />}
+          label="Dart"
+          color="success"
+          variant="contained"
         />
       </div>
     </>

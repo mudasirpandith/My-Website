@@ -10,7 +10,8 @@ h1 {
 } */
 .name-dev {
   font-size: 30px;
-  background: -webkit-linear-gradient(blue, red);
+  font-family: sans-serif;
+  background: -webkit-linear-gradient(red, blue, red);
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

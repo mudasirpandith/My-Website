@@ -19,6 +19,7 @@ export default function About() {
               <li>- Full Stack Web Development by Udemy</li>
               <li>- Flutter Development by Udemy</li>
               <li>- Hultz Prize 2020 NIT Srinagar</li>
+              <li>- C Programming by Spoken Tutorial (IIT Bombay)</li>
             </ul>
           </Grid>
           <Grid xs={12} md={6} xl={3}>
