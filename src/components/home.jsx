@@ -49,35 +49,47 @@ export default function Home() {
                 }}
               />{" "}
             </h1>
-            <p> Loading...</p>
-            <a href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
-              <LinkedInIcon />
-            </a>
-            <a href="https://github.com/mudasirpandith">
-              <GitHubIcon />
-            </a>
-            <a href="mailto:mudasirpandith789@gmail.com">
-              <EmailIcon />
-            </a>{" "}
-            <br />
-            <a href="https://drive.google.com/file/d/1i8clSs9x_yIq-crd4mnmShmJXeXAh5MQ/view">
-              <Button color="inherit" variant="contained">
-                View Resume
-              </Button>
-            </a>{" "}
+            <p>
+              {" "}
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              quaerat commodi nam officia repellendus praesentium mollitia
+              provident? Inventore, totam! Rem totam perspiciatis architecto
+              libero impedit deleniti nostrum assumenda, eveniet saepe.
+            </p>{" "}
           </center>
         </center>
+        <center>
+          <a href="https://drive.google.com/file/d/1i8clSs9x_yIq-crd4mnmShmJXeXAh5MQ/view">
+            <Button color="inherit" variant="contained">
+              View Resume
+            </Button>
+          </a>{" "}
+        </center>
+        <div>
+          <a href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
+            <LinkedInIcon />
+          </a>
+          <br />
+          <a href="https://github.com/mudasirpandith">
+            <GitHubIcon />
+          </a>{" "}
+          <br />
+          <a href="mailto:mudasirpandith789@gmail.com">
+            <EmailIcon />
+          </a>{" "}
+          <br />
+        </div>
       </div>
-      <br />
+
       <br />
       <Skill />
-      <br />
+
       <br />
       <Education />
-      <br />
+
       <br />
       <Projects />
-      <br />
+
       <br />
       <About />
     </>

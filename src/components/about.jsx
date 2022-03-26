@@ -40,7 +40,7 @@ export default function About() {
           </Grid>
         </Grid>
         <Grid container>
-          <Grid xs={12} xl={8}>
+          <Grid xs={12} md={6} xl={8}>
             <h1>About</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -54,11 +54,13 @@ export default function About() {
             </p>
           </Grid>
 
-          <Grid xs={12} xl={4}>
+          <Grid xs={12} md={6} xl={4}>
             <h1>Interests</h1>
-            <p>- Full Stack Development</p>
-            <p>- Team management</p>
-            <p>- Leadership</p>
+            <ul>
+              <li>- Full Stack Development</li>
+              <li>- Team management</li>
+              <li>- Leadership</li>
+            </ul>
           </Grid>
         </Grid>
         <footer>

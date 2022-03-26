@@ -12,22 +12,23 @@ h1 {
   height: auto;
   border-radius: 50%;
 }
-a {
-  margin: 20px;
-  color: #6f6f6f;
-}
+
 .skill-box {
   color: #6f6f6f;
+   margin-left: 4px;
 }
 .about-box {
   color: #6f6f6f;
+   margin-left: 4px;
 }
 .education-box {
   color: #6f6f6f;
+  margin-left: 4px;
 }
 .project-box {
   color: #6f6f6f;
   text-align: left;
+   margin-left: 4px;
 }
 li {
   padding: 10px;
@@ -40,5 +41,8 @@ footer {
   padding: 30px;
 }
 a {
+  margin:0;
+  padding: 0 10px;
   text-decoration: none;
+  color: #6f6f6f;
 }
