@@ -28,13 +28,14 @@ export default function Eduaction() {
               <Accordion
                 expanded={expanded === "panel1"}
                 onChange={handleChange("panel1")}
+
+                style={{backfaceVisibility:"0"}}
               >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
-                >
-                  <Typography sx={{ color: "text.secondary" }}>
+                
+                  >
+                  <Typography >
                     <h4>
                       {" "}
                       <div
