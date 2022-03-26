@@ -25,7 +25,7 @@ export default function Home() {
         container
         spacing={2}
       >
-        <Grid container style={{ marginTop: "60px" }}>
+        <Grid container style={{ marginTop: "40px" }}>
           <Grid xs={12} md={6} xl={6}>
             <center>
               <img
