@@ -106,7 +106,7 @@ export default function Skill() {
         />{" "}
         <Chip
           style={{ margin: "2px" }}
-          icon={<StarPurple500SharpIcon fontSize="small" />}
+          icon={<StarHalfSharpIcon fontSize="small" />}
           label="Dart"
           color="success"
           variant="contained"

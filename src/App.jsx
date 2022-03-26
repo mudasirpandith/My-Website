@@ -7,18 +7,24 @@ import WbSunnyIcon from "@mui/icons-material/WbSunny";
 
 import { Button } from "@mui/material";
 function App() {
-  const [theme, setTheme] = useState(false);
+  var the = localStorage.getItem("theme");
+  const [theme, setTheme] = useState(the);
+
   const handletheme = () => {
     setTheme((prev) => {
+      localStorage.setItem("theme", !prev);
+      setTheme(!prev);
+
       return !prev;
     });
   };
+
   return (
     <>
       {" "}
       <div>
         <Button
-          style={{ position: "fixed" }}
+          style={{ position: "absolute" }}
           variant="outlined"
           color="inherit"
           onClick={handletheme}
