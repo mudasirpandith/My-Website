@@ -17,11 +17,17 @@ function App() {
     <>
       {" "}
       <div>
-        <Button style={{ position: "absolute" }} onClick={handletheme}>
+        <Button
+          style={{ position: "fixed" }}
+          variant="outlined"
+          color="inherit"
+          onClick={handletheme}
+          backgroundColor="red"
+        >
           {!theme ? (
             <WbSunnyIcon color="warning" />
           ) : (
-            <DarkModeIcon color="" />
+            <DarkModeIcon htmlColor="white" />
           )}
         </Button>
         <div
