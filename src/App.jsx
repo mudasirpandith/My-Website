@@ -11,10 +11,8 @@ function App() {
   const [theme, setTheme] = useState(the);
 
   const handletheme = () => {
+    localStorage.setItem("theme", !theme);
     setTheme((prev) => {
-      localStorage.setItem("theme", !prev);
-      setTheme(!prev);
-
       return !prev;
     });
   };
