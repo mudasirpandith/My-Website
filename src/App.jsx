@@ -1,13 +1,17 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Home from "./components/home";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
-
 import { Button } from "@mui/material";
+
 function App() {
-  var the = localStorage.getItem("theme");
+  // var the = localStorage.getItem("theme");
+  useEffect(() => {
+    setThe(localStorage.getItem("theme"));
+  });
+  const [the, setThe] = useState(0);
   const [theme, setTheme] = useState(the);
 
   const handletheme = () => {
