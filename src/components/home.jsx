@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import Profile from "../images/full.jpeg";
+import Profile from "../images/profile.jpg";
 import Skill from "./skills";
 import Projects from "./projects";
 import About from "./about";
@@ -50,7 +50,7 @@ export default function Home() {
                 }}
               />{" "}
             </h1>
-            <p>
+            <p style={{  }}>
               {" "}
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
               quaerat commodi nam officia repellendus praesentium mollitia
