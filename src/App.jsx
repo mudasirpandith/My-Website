@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import Home from "./components/home";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
@@ -8,14 +8,10 @@ import { Button } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Profile from "./images/full.png";
+import Logo from './images/logo.png'
 function App() {
-  // var the = localStorage.getItem("theme");
-  useEffect(() => {
-    setThe(localStorage.getItem("theme"));
-  });
-  const [the, setThe] = useState(1);
+  var the = localStorage.getItem("theme");
   const [theme, setTheme] = useState(the);
-
   const handletheme = () => {
     localStorage.setItem("theme", !theme);
     setTheme((prev) => {
@@ -49,7 +45,7 @@ function App() {
         >
           <div style={{ display: "inline-block", float: "right" }}>
             <Stack direction="row" spacing={2}>
-              <Avatar fontSize="large" alt="Mudasir Pandith" src={Profile} />
+              <Avatar fontSize="large" alt="Mudasir Pandith" src={Logo} />
             </Stack>
           </div>
           <Home />

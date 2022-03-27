@@ -16,7 +16,7 @@ export default function Skill() {
                 src={Profile}
                 alt="d"
                 style={{
-                  height: "100px",
+                  height: "200px",
                   width: "auto",
                 }}
               />

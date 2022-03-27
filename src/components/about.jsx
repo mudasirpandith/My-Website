@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@mui/material";
-
+import Cert from '../images/certificate.png'
 export default function About() {
   return (
     <>
@@ -8,6 +8,9 @@ export default function About() {
         <Grid container>
           <Grid xs={12} md={6} xl={3}>
             <h1>Courses</h1>
+            <h1>Course IMgae</h1>
+          </Grid>
+          <Grid xs={12} md={6} xl={3}>
             <ul>
               <li>- Signal And Sytems</li>
               <li>- Data Structures And Algorithms</li>
@@ -15,6 +18,18 @@ export default function About() {
           </Grid>
           <Grid xs={12} md={6} xl={3}>
             <h1>Certifications</h1>
+            <center>
+              <img
+                src={Cert}
+                alt="d"
+                style={{
+                  height: "180px",
+                  width: "auto",
+                }}
+              />
+            </center>
+          </Grid>
+          <Grid xs={12} md={6} xl={3}>
             <ul>
               <li>- Full Stack Web Development by Udemy</li>
               <li>- Flutter Development by Udemy</li>
@@ -22,17 +37,25 @@ export default function About() {
               <li>- C Programming by Spoken Tutorial (IIT Bombay)</li>
             </ul>
           </Grid>
+        </Grid>
+        <Grid container>
           <Grid xs={12} md={6} xl={3}>
             <h1>Languages I can Speak</h1>
+            Language Image
+          </Grid>
+          <Grid xs={12} md={6} xl={3}>
             <ul>
               <li>- Kashmiri ,Mother tongue</li>
               <li>- English </li>
               <li>- Urdu</li>
               <li>- Hindi</li>
             </ul>
-          </Grid>
+          </Grid>{" "}
           <Grid xs={12} md={6} xl={3}>
             <h1>Hobbies</h1>
+            Hobbies IMage
+          </Grid>
+          <Grid xs={12} md={6} xl={3}>
             <ul>
               <li>- Cricket</li>
               <li>- Volleyball </li>
@@ -40,6 +63,7 @@ export default function About() {
             </ul>
           </Grid>
         </Grid>
+
         <Grid container>
           <Grid xs={12} md={6} xl={8}>
             <h1>About</h1>

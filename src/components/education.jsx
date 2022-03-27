@@ -1,5 +1,4 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import { Grid } from "@mui/material";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -35,7 +34,7 @@ export default function Eduaction() {
                 src={Address}
                 alt="d"
                 style={{
-                  height: "100px",
+                  height: "200px",
                   width: "auto",
                   paddingTop: "30px",
                 }}
