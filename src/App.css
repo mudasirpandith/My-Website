@@ -10,14 +10,16 @@ h1 {
 } */
 .name-dev {
   font-size: 30px;
-  font-family: sans-serif;
-  background: -webkit-linear-gradient(red, blue);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Red Hat Mono", monospace;
+  color: #94b49f;
+  /* background: -webkit-linear-gradient(red, blue);
   background-clip: inherit;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 .skill-box {
-  /* color: #6f6f6f; */
+  color: #ad8b73;
   margin-left: 4px;
 }
 .about-box {
@@ -34,6 +36,9 @@ h1 {
   text-align: left;
   margin-left: 4px;
 }
+.address-box {
+  color: #A8774E;
+}
 li {
   padding: 10px;
 }
@@ -49,6 +54,14 @@ a {
 }
 .nav-link {
   text-decoration: none;
-  color: grey;
   margin: 20px 20px;
+}
+
+hr {
+  margin: 0 40px;
+  height: .0001px;
+
+  border: solid;
+
+  border-radius: 50%;
 }

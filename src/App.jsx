@@ -5,13 +5,15 @@ import Home from "./components/home";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import { Button } from "@mui/material";
-
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import Profile from "./images/full.png";
 function App() {
   // var the = localStorage.getItem("theme");
   useEffect(() => {
     setThe(localStorage.getItem("theme"));
   });
-  const [the, setThe] = useState(0);
+  const [the, setThe] = useState(1);
   const [theme, setTheme] = useState(the);
 
   const handletheme = () => {
@@ -35,16 +37,21 @@ function App() {
           {!theme ? (
             <WbSunnyIcon color="warning" />
           ) : (
-            <DarkModeIcon htmlColor="white" />
+            <DarkModeIcon htmlColor="#94b49f" />
           )}
         </Button>
         <div
           style={
             theme
               ? { backgroundColor: "rgb(32,33,36)", color: "white" }
-              : { backgroundColor: "white", color: "rgb(32,33,36)" }
+              : { backgroundColor: "#FFF8F3", color: "rgb(32,33,36)" }
           }
         >
+          <div style={{ display: "inline-block", float: "right" }}>
+            <Stack direction="row" spacing={2}>
+              <Avatar fontSize="large" alt="Mudasir Pandith" src={Profile} />
+            </Stack>
+          </div>
           <Home />
         </div>
       </div>
