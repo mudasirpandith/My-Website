@@ -11,7 +11,7 @@ export default function Eduaction() {
       {" "}
       <div className="education-box">
         <Grid container>
-          <Grid xs={12} md={6} xl={12}>
+          <Grid xs={12} md={6} xl={4}>
             <h1>Education</h1>
             <center>
               <img
@@ -23,6 +23,13 @@ export default function Eduaction() {
                 }}
               />
             </center>
+          </Grid>
+          <Grid xs={12} md={6} xl={8}>
+            <h4>NIT Srinagar</h4>
+            <p>B.Tech Electronics And Communication Engineering</p>
+            <p>2020-2024</p>
+            <h4>GBHSS Magam</h4>
+            <p>12th</p>
           </Grid>
         </Grid>
 
