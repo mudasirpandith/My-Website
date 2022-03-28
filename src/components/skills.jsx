@@ -23,7 +23,9 @@ export default function Skill() {
             </center>
           </Grid>
           <Grid xs={12} md={6} xl={9}>
-            <center>
+            <div
+            
+            >
               <div
                 style={{
                   backgroundColor: "#AD8B73",
@@ -277,7 +279,7 @@ export default function Skill() {
                   label="Firebase"
                 />{" "}
               </div>
-            </center>
+            </div>
           </Grid>
         </Grid>
       </div>

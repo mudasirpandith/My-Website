@@ -10,6 +10,7 @@ export default function Eduaction() {
     <>
       {" "}
       <div className="education-box">
+       
         <Grid container>
           <Grid xs={12} md={6} xl={4}>
             <h1>Education</h1>
