@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Button, Grid } from "@mui/material";
 import Profile from "../images/full.png";
 import Skill from "./skills";
@@ -9,8 +9,13 @@ import Typewriter from "typewriter-effect";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const pad = {
     paddingTop: window.innerHeight / 3,
   };
@@ -100,23 +105,24 @@ export default function Home() {
           </Grid>
         </Grid>{" "}
       </div>
+      <br />
+      <div data-aos="fade-right">
+        <Skill />
+      </div>
+      <br />
+      <br />
+      <div data-aos="fade-left">
+        <Education />
+      </div>
 
       <br />
-     
-
-      <Skill />
-
       <br />
-      <br />
-     
-      <Education />
-      <br />
-      <br />
-     
       <Projects />
-
       <br />
-      <About />
+      <div data-aos="fade-right">
+        {" "}
+        <About />
+      </div>
     </>
   );
 }
