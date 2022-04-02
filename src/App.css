@@ -20,6 +20,7 @@ h1 {
 }
 .skill-box {
   color: #ad8b73;
+ 
   margin-left: 4px;
 }
 .about-box {
@@ -27,8 +28,8 @@ h1 {
   margin-left: 4px;
 }
 .education-box {
-  color: #B05B3B;
-
+  /* color: #B05B3B; */
+color: #94b49f;
   margin-left: 4px;
 }
 .project-box {
@@ -37,7 +38,8 @@ h1 {
   margin-left: 4px;
 }
 .address-box {
-  color: #A8774E;
+  /* color: #A8774E; */
+  color: #94b49f;
 }
 li {
   padding: 10px;

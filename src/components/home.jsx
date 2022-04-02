@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Button, Grid } from "@mui/material";
 import Profile from "../images/full.png";
 import Skill from "./skills";
@@ -30,6 +30,9 @@ export default function Home() {
         style={{ height: window.innerHeight }}
         container
         spacing={2}
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
       >
         <Grid container style={{ marginTop: "40px" }}>
           <Grid xs={12} md={6} xl={6}>
@@ -39,6 +42,7 @@ export default function Home() {
                 style={{
                   height: "200px",
                   width: "auto",
+
                   border: "solid 0",
                   borderRadius: "50%",
                 }}
@@ -106,12 +110,20 @@ export default function Home() {
         </Grid>{" "}
       </div>
       <br />
-      <div data-aos="fade-right">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <Skill />
       </div>
       <br />
       <br />
-      <div data-aos="fade-left">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <Education />
       </div>
 
@@ -119,7 +131,7 @@ export default function Home() {
       <br />
       <Projects />
       <br />
-      <div data-aos="fade-right">
+      <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
         {" "}
         <About />
       </div>
