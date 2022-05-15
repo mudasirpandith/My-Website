@@ -115,6 +115,7 @@ export default function Home() {
         data-aos-easing="linear"
         data-aos-duration="1000"
       >
+          <center> <h1>Im working on it...</h1> </center>
         <Skill />
       </div>
       <br />
