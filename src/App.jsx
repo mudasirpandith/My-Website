@@ -19,7 +19,7 @@ function App() {
     });
   };
 
-  return (
+  return isLoading?<center>Loading.. </center>: (
     <>
       {" "}
       <div>
@@ -48,7 +48,7 @@ function App() {
               <Avatar fontSize="large" alt="Mudasir Pandith" src={Logo} />
             </Stack>
           </div>
-isLoading?<center>Loading.. </center>:
+
           <Home />
         </div>
       </div>
