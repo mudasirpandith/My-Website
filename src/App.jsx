@@ -19,7 +19,7 @@ function App() {
     });
   };
 
-  return isLoading?<center>Loading.. </center>: (
+  return (
     <>
       {" "}
       <div>
