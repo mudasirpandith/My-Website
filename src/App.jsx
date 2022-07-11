@@ -4,12 +4,20 @@ import React, { useState } from "react";
 import Home from "./components/home";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import { Button } from "@mui/material";
+
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import Profile from "./images/full.png";
-import Logo from './images/logo.png'
+
+//import Profile from "./images/full.png";
+import Logo from "./images/logo.png";
 function App() {
+  const [onStatus, setOnStatus] = useState(true);
+  setInterval(setS, 1);
+
+  function setS() {
+    setOnStatus(navigator.onLine);
+  }
+
   var the = localStorage.getItem("theme");
   const [theme, setTheme] = useState(the);
   const handletheme = () => {
@@ -23,7 +31,7 @@ function App() {
     <>
       {" "}
       <div>
-        <Button
+        <button
           // style={{ position: "absolute" }}
           variant="outlined"
           color="inherit"
@@ -35,7 +43,26 @@ function App() {
           ) : (
             <DarkModeIcon htmlColor="#94b49f" />
           )}
-        </Button>
+        </button>
+
+        {onStatus ? (
+          <></>
+        ) : (
+          <>
+            <p
+              style={{
+                color: "red",
+                fontWeight: "100",
+                textAlign: "right",
+                position: "relative",
+                marginTop: "-25px",
+              }}
+            >
+              {" "}
+              You have no internet connection
+            </p>
+          </>
+        )}
         <div
           style={
             theme
