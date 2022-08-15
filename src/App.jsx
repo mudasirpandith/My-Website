@@ -17,9 +17,8 @@ function App() {
     <>
       <Container>
         <Header />
-          <Section2 />
-       
         <Section2 />
+
         <center>...more to come ...</center>
 
         <footer>

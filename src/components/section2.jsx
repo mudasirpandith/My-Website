@@ -11,13 +11,10 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-
-  margin: auto 0;
+  justify-content: space-evenly;
   padding: 20px;
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     flex-direction: column;
-    
-    margin: auto auto;
   }
 `;
 const TextSide = styled.div`
@@ -29,21 +26,22 @@ const ImageSide = styled.img`
   display: flex;
   height: 300px;
   width: 300px;
-  @media (max-width: 500px) {
-    margin: 0 auto;
+  @media (max-width: 750px) {
+    width: 100%;
+    height: 400px;
   }
 `;
 const Name = styled.p`
   font-size: 2rem;
   font-family: Red Hat Display;
   display: flex;
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     margin: 0 auto;
   }
 `;
 const TypingText = styled.div`
   display: flex;
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     margin: 0 auto;
   }
 `;
@@ -92,7 +90,11 @@ export default function Section2() {
             </DetailText>
             <Button>Resume</Button>
           </TextSide>
-          <ImageSide onClick={handleClickOpen} src={Profile} alt="Profile" />
+          <ImageSide
+            onClick={handleClickOpen}
+            src={Profile}
+            alt="Mudasir Ahmad Pandith"
+          />
         </Container>
       </div>
       <Dialog
