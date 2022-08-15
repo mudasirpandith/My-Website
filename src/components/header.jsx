@@ -50,7 +50,7 @@ export const Header = () => {
         <A href="https://github.com/mudasirpandith">
           <GitHub fontSize="large" />
         </A>
-        <A mailto="mudasirpandith789@gm">
+        <A href="mailto:mudasirpandith789@gmail.com">
           <Email fontSize="large" />
         </A>
         <LightModeIcon fontSize="large" />

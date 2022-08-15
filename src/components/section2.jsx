@@ -3,7 +3,6 @@ import TypeWriterEffect from "react-typewriter-effect";
 import Profile from "../images/profile.jpg";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -12,10 +11,13 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
+
+  margin: auto 0;
   padding: 20px;
   @media (max-width: 500px) {
     flex-direction: column;
-    margin: 0 auto;
+    
+    margin: auto auto;
   }
 `;
 const TextSide = styled.div`
@@ -28,7 +30,6 @@ const ImageSide = styled.img`
   height: 300px;
   width: 300px;
   @media (max-width: 500px) {
- 
     margin: 0 auto;
   }
 `;
@@ -37,14 +38,12 @@ const Name = styled.p`
   font-family: Red Hat Display;
   display: flex;
   @media (max-width: 500px) {
-    
     margin: 0 auto;
   }
 `;
 const TypingText = styled.div`
   display: flex;
   @media (max-width: 500px) {
-    
     margin: 0 auto;
   }
 `;
@@ -65,35 +64,37 @@ export default function Section2() {
   };
   return (
     <>
-      <Container>
-        <TextSide>
-          <Name>Mudasir Pandith</Name>
-          <TypingText>
-            <TypeWriterEffect
-              textStyle={{
-                fontFamily: "Red Hat Display",
-                color: "#3F3D56",
-                fontWeight: 500,
-                fontSize: "2em",
-              }}
-              startDelay={0}
-              cursorColor="#3F3D56"
-              multiText={[" Freelancer", " Full Stack Developer"]}
-              multiTextDelay={1000}
-              loop={true}
-              typeSpeed={40}
-            />
-          </TypingText>
-          <DetailText>
-            I am undergraduate student at NIT Srinagar with Electronics and
-            Communication Engineering as my major. I have keen interest in
-            technology and try to learn eveyday.
-          </DetailText>
-          <Button>Resume</Button>
-        </TextSide>
-        <ImageSide onClick={handleClickOpen} src={Profile} alt="Profile" />
-      </Container>
-
+      {" "}
+      <div style={{ height: window.innerHeight - 40 }}>
+        <Container>
+          <TextSide>
+            <Name>Mudasir Pandith</Name>
+            <TypingText>
+              <TypeWriterEffect
+                textStyle={{
+                  fontFamily: "Red Hat Display",
+                  color: "#3F3D56",
+                  fontWeight: 500,
+                  fontSize: "1.2em",
+                }}
+                startDelay={0}
+                cursorColor="#3F3D56"
+                multiText={[" Freelancer", " Full Stack Developer"]}
+                multiTextDelay={2000}
+                loop={1}
+                typeSpeed={100}
+              />
+            </TypingText>
+            <DetailText>
+              I am undergraduate student at NIT Srinagar with Electronics and
+              Communication Engineering as my major. I have keen interest in
+              technology and try to learn eveyday.
+            </DetailText>
+            <Button>Resume</Button>
+          </TextSide>
+          <ImageSide onClick={handleClickOpen} src={Profile} alt="Profile" />
+        </Container>
+      </div>
       <Dialog
         fullScreen={fullScreen}
         open={open}
@@ -113,13 +114,6 @@ export default function Section2() {
             />
           </DialogContentText>
         </DialogContent>
-        <DialogActions>
-          <Button
-            style={{ position: "absolute", bottom: "0" }}
-            onClick={handleClose}
-            autoFocus
-          ></Button>
-        </DialogActions>
       </Dialog>
     </>
   );
