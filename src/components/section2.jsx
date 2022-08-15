@@ -27,14 +27,26 @@ const ImageSide = styled.img`
   display: flex;
   height: 300px;
   width: 300px;
+  @media (max-width: 500px) {
+ 
+    margin: 0 auto;
+  }
 `;
 const Name = styled.p`
   font-size: 2rem;
   font-family: Red Hat Display;
   display: flex;
+  @media (max-width: 500px) {
+    
+    margin: 0 auto;
+  }
 `;
 const TypingText = styled.div`
   display: flex;
+  @media (max-width: 500px) {
+    
+    margin: 0 auto;
+  }
 `;
 const DetailText = styled.p`
   display: flex;
@@ -66,7 +78,7 @@ export default function Section2() {
               }}
               startDelay={0}
               cursorColor="#3F3D56"
-              multiText={[" Full Stack Developer", " Freelancer"]}
+              multiText={[" Freelancer", " Full Stack Developer"]}
               multiTextDelay={1000}
               loop={true}
               typeSpeed={40}
@@ -78,7 +90,6 @@ export default function Section2() {
             technology and try to learn eveyday.
           </DetailText>
           <Button>Resume</Button>
-        
         </TextSide>
         <ImageSide onClick={handleClickOpen} src={Profile} alt="Profile" />
       </Container>
