@@ -5,7 +5,6 @@ import styled from "styled-components";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
   width: 80%;
-  background-color: #e7f6f2;
   margin: 0 auto;
   @media (max-width: 500px) {
     width: 100%;
