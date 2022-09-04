@@ -11,6 +11,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
+
   justify-content: space-evenly;
   padding: 20px;
   @media (max-width: 750px) {
@@ -28,7 +29,7 @@ const ImageSide = styled.img`
   width: 300px;
   @media (max-width: 750px) {
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
 `;
 const Name = styled.p`
@@ -84,6 +85,7 @@ export default function Section2() {
               />
             </TypingText>
             <DetailText>
+              
               I am undergraduate student at NIT Srinagar with Electronics and
               Communication Engineering as my major. I have keen interest in
               technology and try to learn eveyday.
@@ -91,7 +93,7 @@ export default function Section2() {
             <Button>Resume</Button>
           </TextSide>
           <ImageSide
-            onClick={handleClickOpen}
+            onMouseEnter={window.innerWidth > 500 ? handleClickOpen : undefined}
             src={Profile}
             alt="Mudasir Ahmad Pandith"
           />
