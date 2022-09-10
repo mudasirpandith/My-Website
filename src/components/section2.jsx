@@ -1,124 +1,104 @@
 import React from "react";
-import TypeWriterEffect from "react-typewriter-effect";
-import Profile from "../images/profile.jpg";
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
 import styled from "styled-components";
-
 const Container = styled.div`
+  padding-top: 20px;
+  background-color: rgb(88, 62, 189);
+  color: white;
+  height: 100%;
   display: flex;
-
-  justify-content: space-evenly;
-  padding: 20px;
-  @media (max-width: 750px) {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  @media (max-width: 450px) {
     flex-direction: column;
   }
 `;
+
 const TextSide = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: column;
-`;
-const ImageSide = styled.img`
-  display: flex;
-  height: 300px;
-  width: 300px;
-  @media (max-width: 750px) {
-    width: 100%;
-    height: 350px;
+  flex: 3;
+  margin: auto 0 auto 70px;
+  @media (max-width: 450px) {
+    margin: 0 20px;
+
+    align-items: left;
   }
 `;
-const Name = styled.p`
-  font-size: 2rem;
-  font-family: Red Hat Display;
+const LargeText = styled.h1`
   display: flex;
-  @media (max-width: 750px) {
-    margin: 0 auto;
-  }
+  margin: 0;
 `;
-const TypingText = styled.div`
-  display: flex;
-  @media (max-width: 750px) {
-    margin: 0 auto;
-  }
-`;
-const DetailText = styled.p`
+const SmallText = styled.p`
   display: flex;
   flex-wrap: wrap;
 `;
+const ImageSide = styled.div`
+  display: flex;
+  flex: 5;
+  margin: auto;
+  @media (max-width: 450px) {
+    margin: 0 20px;
+  }
+`;
+const Image = styled.img`
+  height: 550px;
+  @media (max-width: 450px) {
+    height: 300px;
+  }
+`;
+const Buttons = styled.div`
+  display: flex;
+  margin: 0;
+  text-align: center;
+  gap: 10px;
+`;
+const ButtonY = styled.button`
+  display: flex;
+  border: 1px white;
+  padding: 10px 20px;
+  background-color: #f6f7a9;
+  cursor: pointer;
+  border-radius: 10px;
+`;
+const Button = styled.button`
+  display: flex;
+  border: 1px white solid;
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+`;
 export default function Section2() {
-  const [open, setOpen] = React.useState(false);
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down("ms"));
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+  console.log(window.innerHeight - 150);
   return (
     <>
-      {" "}
-      <div style={{ height: window.innerHeight - 40 }}>
+      <div style={{ height: window.innerHeight - 100 }}>
         <Container>
           <TextSide>
-            <Name>Mudasir Pandith</Name>
-            <TypingText>
-              <TypeWriterEffect
-                textStyle={{
-                  fontFamily: "Red Hat Display",
-                  color: "#3F3D56",
-                  fontWeight: 500,
-                  fontSize: "1.2em",
-                }}
-                startDelay={0}
-                cursorColor="#3F3D56"
-                multiText={[" Freelancer", " Full Stack Developer"]}
-                multiTextDelay={2000}
-                loop={1}
-                typeSpeed={100}
-              />
-            </TypingText>
-            <DetailText>
-              
-              I am undergraduate student at NIT Srinagar with Electronics and
-              Communication Engineering as my major. I have keen interest in
-              technology and try to learn eveyday.
-            </DetailText>
-            <Button>Resume</Button>
+            <LargeText>
+              Hello, I'm <br /> Mudasir Pandith{" "}
+            </LargeText>
+            <SmallText>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              molestiae, laborum possimus ea aperiam delectus assumenda eum
+              sapiente, fugit voluptates modi dolorum magni reiciendis illum
+              quos adipisci officia eaque. Sequi.
+            </SmallText>
+            <Buttons>
+              <ButtonY>About</ButtonY>
+              <Button>Download CV</Button>
+            </Buttons>
           </TextSide>
-          <ImageSide
-            onMouseEnter={window.innerWidth > 500 ? handleClickOpen : undefined}
-            src={Profile}
-            alt="Mudasir Ahmad Pandith"
-          />
+
+          <ImageSide>
+            <Image
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQFv0o4-1yjKag/profile-displayphoto-shrink_400_400/0/1651503799357?e=1668038400&v=beta&t=LkDHqWbTEAWH9IXMOMf9YSBsVKnahI_uJz0kIa2ZM94"
+              alt=""
+            />
+          </ImageSide>
         </Container>
       </div>
-      <Dialog
-        fullScreen={fullScreen}
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="responsive-dialog-title"
-      >
-        <DialogContent>
-          <DialogContentText>
-            <img
-              src={Profile}
-              alt="profile"
-              style={{
-                height: window.innerHeight > 900 ? "auto" : "auto",
-                width: window.innerWidth > 500 ? "500px" : "280px",
-                margin: "0",
-              }}
-            />
-          </DialogContentText>
-        </DialogContent>
-      </Dialog>
     </>
   );
 }

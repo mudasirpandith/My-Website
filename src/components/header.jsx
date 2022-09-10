@@ -1,8 +1,7 @@
 import Email from "@mui/icons-material/Email";
 import GitHub from "@mui/icons-material/GitHub";
 import LinkedIn from "@mui/icons-material/LinkedIn";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import React from "react";
 import styled from "styled-components";
 
@@ -12,15 +11,16 @@ const Container = styled.div`
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: white;
+  background-color: rgb(88, 62, 189);
+  color: white;
   flex: 1;
-  margin: 0 0 2px 0;
+  margin: 0 0 0 0;
   padding: 10px 20px;
 `;
 const Heading = styled.h1`
   display: flex;
   margin: 0;
-  color: #112b3c;
+
   flex: 1;
   @media (max-width: 500px) {
     font-size: 20px;
@@ -33,27 +33,32 @@ const Icons = styled.div`
   gap: 20px;
 `;
 const A = styled.a`
-  display: flex;
   color: inherit;
+  padding: 4px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
 `;
 export const Header = () => {
   return (
     <Container>
-      <A href="/">
-        <Heading>MP</Heading>
-      </A>
+      <Heading>MP</Heading>
 
       <Icons>
         <A href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
-          <LinkedIn fontSize="large" />
+          <LinkedIn />
         </A>
         <A href="https://github.com/mudasirpandith">
-          <GitHub fontSize="large" />
+          <GitHub />
         </A>
         <A href="mailto:mudasirpandith789@gmail.com">
-          <Email fontSize="large" />
+          <Email />
         </A>
-        <LightModeIcon fontSize="large" />
+        <A href="https://www.instagram.com/mudasirpandith_/">
+          <InstagramIcon />
+        </A>
       </Icons>
     </Container>
   );
