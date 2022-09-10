@@ -36,7 +36,7 @@ const ImageSide = styled.div`
   display: flex;
   flex: 5;
   margin: auto;
-  padding: 20px 0;
+  padding: 40px 0;
   @media (max-width: 450px) {
     margin: 0 20px;
   }

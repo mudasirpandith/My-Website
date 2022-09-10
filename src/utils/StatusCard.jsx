@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const Container = styled.div`
   display: flex;
-  width: 100px;
+  width: 110px;
   padding: 20px;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@ const Details = styled.p`
   display: flex;
   color: #aaa8a9;
   flex: 1;
-  font-size: 10px;
+  font-size: 12px;
 `;
 
 export const StatusCard = (props) => {
