@@ -4,10 +4,10 @@ const Container = styled.div`
   padding-top: 20px;
   background-color: rgb(88, 62, 189);
   color: white;
-
+  height: 100%;
   display: flex;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
   @media (max-width: 450px) {
     flex-direction: column;
   }
@@ -74,7 +74,7 @@ export default function Section2() {
   console.log(window.innerHeight - 150);
   return (
     <>
-      <div >
+      <div>
         <Container>
           <TextSide>
             <LargeText>

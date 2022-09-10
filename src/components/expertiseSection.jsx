@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ServiceCards } from "../utils/ServiceCards";
 const Container = styled.div`
   display: flex;
-  margin: 60px auto;
+  margin: 30px auto;
   width: 80%;
   flex-direction: column;
 `;
