@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { SkillRange } from "./SkillRange";
+import { data } from "../utils/data";
 const Container = styled.div`
   display: flex;
   margin: 8px 5px;
@@ -45,6 +46,7 @@ const Skills = styled.div`
   flex: 4;
 `;
 export const MySkillsCard = () => {
+  console.table(data);
   return (
     <Container>
       <TextSide>
@@ -60,12 +62,13 @@ export const MySkillsCard = () => {
         </SmallText>
       </TextSide>
       <Skills>
-        <SkillRange /> <SkillRange /> <SkillRange /> <SkillRange />{" "}
-        <SkillRange /> <SkillRange /> <SkillRange /> <SkillRange />{" "}
-        <SkillRange /> <SkillRange /> <SkillRange /> <SkillRange />
-        <SkillRange /> <SkillRange /> <SkillRange /> <SkillRange />{" "}
-        <SkillRange /> <SkillRange /> <SkillRange /> <SkillRange />{" "}
-        <SkillRange /> <SkillRange /> <SkillRange /> <SkillRange />
+        {data[0].Skills.map((skill) => {
+          return (
+            <>
+              <SkillRange Skill={skill.Skill} SkillLogo={skill.SkillLogo} />
+            </>
+          );
+        })}
       </Skills>
     </Container>
   );

@@ -7,21 +7,22 @@ const Container = styled.div`
   background-color: #ffffff;
   flex-direction: column;
 `;
-const Number = styled.h2`
+const Number = styled.img`
   display: flex;
-  flex: 6;
-  margin: 0 auto;
+
+  height: 45px;
+  margin: 0 auto 15px auto;
 `;
 const Name = styled.p`
-  flex: 2;
+  flex: 3;
   display: flex;
   margin: 0 auto;
 `;
-export const SkillRange = () => {
+export const SkillRange = (props) => {
   return (
     <Container>
-      <Number>89%</Number>
-      <Name>Reactjs</Name>
+      <Number src={props.SkillLogo} />
+      <Name>{props.Skill}</Name>
     </Container>
   );
 };

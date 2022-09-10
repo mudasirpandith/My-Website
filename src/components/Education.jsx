@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
+import { EducationCard } from "../utils/EducationCard";
+import {data} from '../utils/data'
 const Container = styled.div`
   display: flex;
   background-color: #f7f7f7;
@@ -30,10 +31,7 @@ const SmallText = styled.p`
 const List = styled.div`
   display: flex;
   gap: 20px;
-
-  @media (max-width: 500px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 `;
 
 export const Education = () => {
@@ -50,7 +48,17 @@ export const Education = () => {
           cum! Quas.{" "}
         </SmallText>
       </Grid>
-      <List></List>
+      <List>
+        {data[1].Colleges.map((college)=>{
+          return (
+            <>
+              <EducationCard date={college.Date} CollegeName={college.CollegeName} Details={college.Details} />
+            </>
+          );
+        })}
+       
+       
+      </List>
     </Container>
   );
 };
