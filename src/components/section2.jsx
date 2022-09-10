@@ -4,7 +4,7 @@ const Container = styled.div`
   padding-top: 20px;
   background-color: rgb(88, 62, 189);
   color: white;
-  height: 100%;
+
   display: flex;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -36,6 +36,7 @@ const ImageSide = styled.div`
   display: flex;
   flex: 5;
   margin: auto;
+  padding: 20px 0;
   @media (max-width: 450px) {
     margin: 0 20px;
   }
@@ -73,7 +74,7 @@ export default function Section2() {
   console.log(window.innerHeight - 150);
   return (
     <>
-      <div style={{ height: window.innerHeight - 100 }}>
+      <div >
         <Container>
           <TextSide>
             <LargeText>

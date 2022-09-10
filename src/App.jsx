@@ -4,6 +4,7 @@ import { Header } from "./components/header";
 import styled from "styled-components";
 import { ExpertiseSection } from "./components/expertiseSection";
 import { MySkills } from "./components/MySkills";
+import { Education } from "./components/Education";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
 
@@ -22,6 +23,7 @@ function App() {
         <Section2 />
         <ExpertiseSection />
         <MySkills />
+        <Education />
         <footer>
           <p style={{ textAlign: "center" }} className="section-1">
             Mudasir Ahmad Pandith © {new Date().getFullYear()}

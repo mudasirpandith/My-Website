@@ -27,10 +27,10 @@ const Details = styled.p`
   font-size: 10px;
 `;
 
-export const StatusCard = () => {
+export const StatusCard = (props) => {
   return (
     <Container>
-      <Icon src="https://t3.ftcdn.net/jpg/03/37/67/30/360_F_337673028_wZqTUA4lx1NuzIQZtfTVPbRnFcygY0hL.jpg" />
+      <Icon src={props.imgUrl} />
       <Number>12</Number>
       <Details>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sed

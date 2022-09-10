@@ -14,7 +14,7 @@ const Logo = styled.img`
   display: flex;
   height: 30px;
   width: 60px;
-  flex: 5;
+  flex: 4;
 `;
 const TextPart = styled.div`
   display: flex;
