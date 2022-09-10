@@ -6,6 +6,7 @@ import { MySkills } from "./components/MySkills";
 import { Education } from "./components/Education";
 import Home from "./components/Home";
 import { Testimonials } from "./components/Testimonials";
+import { BlogAndTouchIn } from "./components/BlogAndTouchIn";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
 
@@ -26,6 +27,7 @@ function App() {
         <MySkills />
         <Education />
         <Testimonials />
+        <BlogAndTouchIn />
         <footer>
           <p style={{ textAlign: "center" }} className="section-1">
             Mudasir Ahmad Pandith © {new Date().getFullYear()}

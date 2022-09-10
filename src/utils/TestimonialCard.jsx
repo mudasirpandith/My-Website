@@ -34,7 +34,10 @@ const UserName = styled.h1`
 export const TestimonialCard = (props) => {
   return (
     <Container>
-      <Comma src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52savCAZLY6S3fgKK_2cuDmfih59KZLXmrydRA1k1SMJByY_VBKmcdthDTNXfpkDQk2Y&usqp=CAU" />
+      <Comma
+        loading="lazy"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52savCAZLY6S3fgKK_2cuDmfih59KZLXmrydRA1k1SMJByY_VBKmcdthDTNXfpkDQk2Y&usqp=CAU"
+      />
       <Details> {props.Details}</Details>
       <User>
         <UserIcon src={props.imgUrl} />

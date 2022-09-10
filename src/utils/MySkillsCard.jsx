@@ -11,6 +11,7 @@ const Container = styled.div`
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   padding: 10px;
+  gap: 20px;
   flex: 1;
   @media (max-width: 500px) {
     flex-direction: column;
@@ -43,7 +44,8 @@ const SmallText = styled.p`
 `;
 const Skills = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
   flex: 4;
 `;

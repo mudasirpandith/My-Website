@@ -25,9 +25,13 @@ const Title = styled.p`
 `;
 const Cards = styled.div`
   display: flex;
-  margin: auto auto;
+
   gap: 20px;
   flex-wrap: wrap;
+  margin: auto;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 export const Testimonials = () => {
   return (
