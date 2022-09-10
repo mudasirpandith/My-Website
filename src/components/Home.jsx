@@ -70,7 +70,7 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 10px;
 `;
-export default function Section2() {
+export default function Home() {
   console.log(window.innerHeight - 150);
   return (
     <>

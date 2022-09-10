@@ -8,6 +8,7 @@ const Container = styled.div`
   background-color: rgb(88, 62, 189);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+
 `;
 const SkillSet = styled.div`
   display: flex;

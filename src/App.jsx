@@ -1,10 +1,11 @@
 import React from "react";
-import Section2 from "./components/section2";
 import { Header } from "./components/header";
 import styled from "styled-components";
 import { ExpertiseSection } from "./components/expertiseSection";
 import { MySkills } from "./components/MySkills";
 import { Education } from "./components/Education";
+import Home from "./components/Home";
+import { Testimonials } from "./components/Testimonials";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
 
@@ -20,10 +21,11 @@ function App() {
     <>
       <Container>
         <Header />
-        <Section2 />
+        <Home />
         <ExpertiseSection />
         <MySkills />
         <Education />
+        <Testimonials />
         <footer>
           <p style={{ textAlign: "center" }} className="section-1">
             Mudasir Ahmad Pandith © {new Date().getFullYear()}

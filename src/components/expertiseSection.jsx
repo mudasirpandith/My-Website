@@ -52,14 +52,17 @@ export const ExpertiseSection = () => {
       </Grid>
       <Services>
         <ServiceCards
-          title="Web Designer"
+          logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqajy5jFVLh3az4GF6IXENdHNkLDECpYiYg&usqp=CAU"
+          title="Web Development"
           details="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
         />{" "}
         <ServiceCards
-          title="Data Analytics"
+          logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0qcY07VwMA45KlZ6pDfbYveClHEu9d2NOg&usqp=CAU"
+          title="Data Analysis"
           details="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
         />{" "}
         <ServiceCards
+          logo="https://www.kindpng.com/picc/m/255-2554071_beltech-2018-icons-webside-schedule-machine-learning-machine.png"
           title="Machine Learning"
           details="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
         />

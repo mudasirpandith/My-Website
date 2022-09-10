@@ -5,20 +5,19 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 300px;
+  height: 200px;
   padding: 10px;
 
   border-radius: 10px;
 `;
 const Logo = styled.img`
   display: flex;
-  height: 30px;
+  height: 60px;
   width: 60px;
-  flex: 4;
 `;
 const TextPart = styled.div`
   display: flex;
-  flex: 3;
+
   padding-top: 30px;
   flex-direction: column;
 `;
@@ -35,7 +34,7 @@ const Details = styled.p`
 export const ServiceCards = (props) => {
   return (
     <Container>
-      <Logo src="https://w7.pngwing.com/pngs/288/577/png-transparent-logo-online-and-offline-graphic-designer-architecture-logo-design-web-design-company-orange.png" />
+      <Logo src={props.logo} />
 
       <TextPart>
         <Title>{props.title}</Title>

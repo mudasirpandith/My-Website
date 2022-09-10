@@ -8,6 +8,8 @@ const Container = styled.div`
   background-color: #f7f7f7;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   padding: 10px;
   flex: 1;
   @media (max-width: 500px) {
