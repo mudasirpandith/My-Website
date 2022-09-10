@@ -70,6 +70,10 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 10px;
 `;
+const A = styled.a`
+  color: inherit;
+`;
+
 export default function Home() {
   console.log(window.innerHeight - 150);
   return (
@@ -88,7 +92,9 @@ export default function Home() {
             </SmallText>
             <Buttons>
               <ButtonY>About</ButtonY>
-              <Button>Download CV</Button>
+              <A href="https://drive.google.com/file/d/1VdFX9pmwXe3V0qMpdtTEFaiBZ-iuVtA8/view">
+                <Button>Download CV</Button>
+              </A>
             </Buttons>
           </TextSide>
 

@@ -7,6 +7,7 @@ import { Education } from "./components/Education";
 import Home from "./components/Home";
 import { Testimonials } from "./components/Testimonials";
 import { BlogAndTouchIn } from "./components/BlogAndTouchIn";
+import { Footer } from "./components/Footer";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
 
@@ -28,11 +29,7 @@ function App() {
         <Education />
         <Testimonials />
         <BlogAndTouchIn />
-        <footer>
-          <p style={{ textAlign: "center" }} className="section-1">
-            Mudasir Ahmad Pandith © {new Date().getFullYear()}
-          </p>
-        </footer>
+        <Footer />
       </Container>
     </>
   );

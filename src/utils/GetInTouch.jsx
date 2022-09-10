@@ -10,7 +10,10 @@ const Container = styled.div`
   color: black;
   padding-top: 30px;
   margin: 10px;
-  width: 100%;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 const Heading = styled.p`
   color: #aaa8a9;
@@ -31,10 +34,44 @@ const TextSide = styled.div`
   margin: auto 0 auto 70px;
   flex: 3;
   flex-direction: column;
+  @media (max-width: 500px) {
+    margin: 0 10px;
+  }
 `;
 const FormSide = styled.div`
   display: flex;
+  align-items: center;
+  flex-direction: column;
   flex: 5;
+  gap: 10px;
+  @media (max-width: 500px) {
+    padding-bottom: 20px;
+  }
+`;
+const Form = styled.form`
+  text-align: center;
+  width: 320px;
+  border-radius: 10px;
+  background-color: white;
+`;
+const Input = styled.input`
+  display: flex;
+  padding: 10px;
+  height: 30px;
+  width: 280px;
+  margin: 20px auto;
+  border: 1px solid #aaa8a9;
+`;
+const Button = styled.button`
+  display: flex;
+  border: none;
+  width: 300px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(88, 62, 189);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 `;
 export const GetInTouch = () => {
   return (
@@ -51,6 +88,13 @@ export const GetInTouch = () => {
       </TextSide>
       <FormSide>
         <LargeText>Want a collaboration?</LargeText>
+        <Form action="#">
+          <Input type="text" placeholder="Name" />
+          <Input type="email" placeholder="Email" />
+          <Input type="tel" placeholder="Phone Number" />
+          <Input type="text" placeholder="Message" />
+          <Button>Submit</Button>
+        </Form>
       </FormSide>
     </Container>
   );

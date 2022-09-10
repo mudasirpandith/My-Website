@@ -7,7 +7,10 @@ const Container = styled.div`
   background-color: rgb(88, 62, 189);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   flex-direction: column;
+  margin-top: 30px;
   padding-top: 40px;
   color: white;
 `;
@@ -15,6 +18,9 @@ const Heading = styled.p`
   margin: auto 0 auto 70px;
   color: #aaa8a9;
   font-size: 20px;
+  @media (max-width: 500px) {
+    margin: 0 10px;
+  }
 `;
 const Grid = styled.div`
   display: flex;
@@ -26,19 +32,29 @@ const LargeText = styled.h1`
   margin: auto 0 auto 70px;
   display: flex;
   flex: 4;
+  @media (max-width: 500px) {
+    margin: 4px 10px;
+  }
 `;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
   flex: 4;
+  @media (max-width: 500px) {
+    margin: 4px 10px;
+  }
 `;
 const GetIn = styled.div`
   display: flex;
   gap: 20px;
- 
+  margin: 20px 0;
   @media (max-width: 500px) {
     flex-direction: column;
   }
+`;
+const Socials = styled.div`
+  display: flex;
+  margin: 30px 0 auto 70px;
 `;
 export const BlogAndTouchIn = () => {
   return (
@@ -58,6 +74,9 @@ export const BlogAndTouchIn = () => {
       <GetIn>
         <GetInTouch />
       </GetIn>
+      <Socials>
+        <LargeText>Social Media ...working</LargeText>
+      </Socials>
     </Container>
   );
 };
