@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import { Testimonials } from "./components/Testimonials";
 import { BlogAndTouchIn } from "./components/BlogAndTouchIn";
 import { Footer } from "./components/Footer";
+import { useState } from "react";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
 
@@ -19,9 +20,15 @@ const Container = styled.div`
 `;
 
 function App() {
+  console.log(window.scrollY);
+  const [len, setLen] = useState(0);
+  function get(e) {
+    setLen(window.screenY);
+    console.log(len);
+  }
   return (
     <>
-      <Container>
+      <Container onScroll={get}>
         <Header />
         <Home />
         <ExpertiseSection />

@@ -5,10 +5,10 @@ import { GetInTouch } from "../utils/GetInTouch";
 const Container = styled.div`
   display: flex;
   background-color: rgb(88, 62, 189);
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   flex-direction: column;
   margin-top: 30px;
   padding-top: 40px;
@@ -19,13 +19,14 @@ const Heading = styled.p`
   color: #aaa8a9;
   font-size: 20px;
   @media (max-width: 500px) {
-    margin: 0 10px;
+    margin: 20px ;
   }
 `;
 const Grid = styled.div`
   display: flex;
   @media (max-width: 500px) {
     flex-direction: column;
+    margin: 10px 10px;
   }
 `;
 const LargeText = styled.h1`
@@ -33,7 +34,7 @@ const LargeText = styled.h1`
   display: flex;
   flex: 4;
   @media (max-width: 500px) {
-    margin: 4px 10px;
+    margin: 20px 10px;
   }
 `;
 const SmallText = styled.p`

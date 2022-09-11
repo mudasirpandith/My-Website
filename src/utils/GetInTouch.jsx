@@ -3,10 +3,10 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   background-color: #f7f7f7;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   color: black;
   padding-top: 30px;
   margin: 10px;
@@ -23,7 +23,7 @@ const Heading = styled.p`
 const LargeText = styled.h1`
   display: flex;
   flex: 4;
-  margin: 5px 0;
+  margin: 10px 0;
 `;
 const SmallText = styled.p`
   display: flex;
@@ -35,7 +35,7 @@ const TextSide = styled.div`
   flex: 3;
   flex-direction: column;
   @media (max-width: 500px) {
-    margin: 0 10px;
+    margin: 0 20px;
   }
 `;
 const FormSide = styled.div`
@@ -65,9 +65,10 @@ const Input = styled.input`
 const Button = styled.button`
   display: flex;
   border: none;
-  width: 300px;
-  padding: 10px;
+  flex: 1;
+  padding: 10px 100px ;
   color: white;
+  margin: 20px auto;
   background-color: rgb(88, 62, 189);
   margin-bottom: 20px;
   border-radius: 10px;

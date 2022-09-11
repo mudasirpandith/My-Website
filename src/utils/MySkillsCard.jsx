@@ -6,10 +6,10 @@ const Container = styled.div`
   display: flex;
   margin: 8px 5px;
   background-color: #f7f7f7;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   padding: 10px;
   gap: 20px;
   flex: 1;
@@ -50,7 +50,6 @@ const Skills = styled.div`
   flex: 4;
 `;
 export const MySkillsCard = () => {
-  console.table(data);
   return (
     <Container>
       <TextSide>
@@ -68,9 +67,13 @@ export const MySkillsCard = () => {
       <Skills>
         {data[0].Skills.map((skill) => {
           return (
-            <>
-              <SkillRange Skill={skill.Skill} SkillLogo={skill.SkillLogo} />
-            </>
+            <React.Fragment>
+              <SkillRange
+                key={skill.id}
+                Skill={skill.Skill}
+                SkillLogo={skill.SkillLogo}
+              />
+            </React.Fragment>
           );
         })}
       </Skills>

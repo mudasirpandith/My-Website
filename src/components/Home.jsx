@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import { Button } from "@mui/material";
 const Container = styled.div`
   padding-top: 20px;
   background-color: rgb(88, 62, 189);
   color: white;
   height: 100%;
   display: flex;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   @media (max-width: 450px) {
     flex-direction: column;
   }
@@ -53,29 +55,13 @@ const Buttons = styled.div`
   text-align: center;
   gap: 10px;
 `;
-const ButtonY = styled.button`
-  display: flex;
-  border: 1px white;
-  padding: 10px 20px;
-  background-color: #f6f7a9;
-  cursor: pointer;
-  border-radius: 10px;
-`;
-const Button = styled.button`
-  display: flex;
-  border: 1px white solid;
-  padding: 10px 20px;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-`;
+
+
 const A = styled.a`
   color: inherit;
 `;
 
 export default function Home() {
-  console.log(window.innerHeight - 150);
   return (
     <>
       <div>
@@ -91,9 +77,21 @@ export default function Home() {
               quos adipisci officia eaque. Sequi.
             </SmallText>
             <Buttons>
-              <ButtonY>About</ButtonY>
+              <A href="https://twitter.com/mudasirpandith7">
+                {" "}
+                <Button
+                  color="warning"
+                  variant="contained"
+                  endIcon={<TwitterIcon color="white" />}
+                >
+                  Say Hi
+                </Button>
+              </A>
+
               <A href="https://drive.google.com/file/d/1VdFX9pmwXe3V0qMpdtTEFaiBZ-iuVtA8/view">
-                <Button>Download CV</Button>
+                <Button variant="outlined" color="inherit">
+                  Download CV
+                </Button>
               </A>
             </Buttons>
           </TextSide>

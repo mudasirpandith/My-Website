@@ -18,7 +18,7 @@ const Details = styled.p`
   color: #aaa8a9;
   flex: 4;
 `;
-const Title = styled.p`
+const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

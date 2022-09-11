@@ -2,62 +2,74 @@ export const data = [
   {
     Skills: [
       {
+        id: 1,
         Skill: "Reactjs",
         SkillLogo:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
       },
       {
+        id: 2,
         Skill: "Nodejs",
         SkillLogo:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png",
       },
       {
+        id: 3,
         Skill: "Expressjs",
         SkillLogo:
           "https://www.edureka.co/blog/wp-content/uploads/2019/07/express-logo.png",
       },
 
       {
+        id: 4,
         Skill: "MongoDB",
         SkillLogo:
           "https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.jpg",
       },
       {
+        id: 5,
         Skill: "JavaScriot",
         SkillLogo:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
       },
       {
+        id: 6,
         Skill: "HTML/CSS",
         SkillLogo:
           "https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg",
       },
       {
+        id: 7,
         Skill: "C/C++",
         SkillLogo:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEJ7PEyWkO4MX1E36_i1osd_jCuTqMIJ2X4zph3E&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSblhpW0cfW_lHxABF7V92k93jr-urSQ6_re7FJmeD&s",
       },
       {
+        id: 8,
         Skill: "Python",
         SkillLogo:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1XkU-YmToxnGj1P229AXhjRF-H9HaiybiydzmvkQ&s",
       },
       {
+        id: 9,
         Skill: "Numpy",
         SkillLogo:
           "https://user-images.githubusercontent.com/67586773/105040771-43887300-5a88-11eb-9f01-bee100b9ef22.png",
       },
       {
+        id: 10,
         Skill: "Pandas",
         SkillLogo:
           "https://www.cilans.net/wp-content/uploads/2019/12/Python-Pandas-logo.png",
       },
       {
+        id: 11,
         Skill: "scikit learn",
         SkillLogo:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png",
       },
       {
+        id: 12,
         Skill: "Pandas",
         SkillLogo:
           "https://www.cilans.net/wp-content/uploads/2019/12/Python-Pandas-logo.png",
@@ -78,8 +90,9 @@ export const data = [
         Details:
           "quo in officiis. Doloribus, consectetur veniam asperiores rationesequi tempora beatae nulla minima assumenda hic, perferendis eveniet consequuntur consequatur! Veritatis",
       },
-    ],},
-    {
+    ],
+  },
+  {
     TestMon: [
       {
         Details:

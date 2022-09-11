@@ -6,10 +6,10 @@ const Container = styled.div`
   height: 100px;
   background-color: #ffffff;
   flex-direction: column;
+  border-radius: 6px;
 `;
-const Number = styled.img`
+const Logo = styled.img`
   display: flex;
-
   height: 45px;
   margin: 0 auto 15px auto;
 `;
@@ -21,7 +21,7 @@ const Name = styled.p`
 export const SkillRange = (props) => {
   return (
     <Container>
-      <Number src={props.SkillLogo} />
+      <Logo src={props.SkillLogo} />
       <Name>{props.Skill}</Name>
     </Container>
   );
