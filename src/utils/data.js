@@ -81,14 +81,13 @@ export const data = [
       {
         CollegeName: "NIT Srinagar",
         Date: "2020-2024",
-        Details:
-          "quo in officiis. Doloribus, consectetur veniam asperiores rationesequi tempora beatae nulla minima assumenda hic, perferendis eveniet consequuntur consequatur! Veritatis",
+        Details: "B.Tech Electronics And Communication Engineering",
       },
       {
         CollegeName: "JKIMS",
         Date: "2018-2020",
         Details:
-          "quo in officiis. Doloribus, consectetur veniam asperiores rationesequi tempora beatae nulla minima assumenda hic, perferendis eveniet consequuntur consequatur! Veritatis",
+          "Integrated Course of Mathematics, Physics and Computer Science",
       },
     ],
   },
