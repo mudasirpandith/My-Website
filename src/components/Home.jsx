@@ -45,6 +45,8 @@ const ImageSide = styled.div`
 `;
 const Image = styled.img`
   height: 550px;
+  border-radius: 25px;
+  border: white solid 1px;
   @media (max-width: 450px) {
     height: 300px;
   }
@@ -55,7 +57,6 @@ const Buttons = styled.div`
   text-align: center;
   gap: 10px;
 `;
-
 
 const A = styled.a`
   color: inherit;
@@ -80,7 +81,7 @@ export default function Home() {
               <A href="https://twitter.com/mudasirpandith7">
                 {" "}
                 <Button
-                  color="warning"
+                color='primary'
                   variant="contained"
                   endIcon={<TwitterIcon color="white" />}
                 >

@@ -9,7 +9,7 @@ const Header = styled.div`
   gap: 20px;
 `;
 const Icon = styled.div`
-  width:5px;
+  width: 5px;
   height: 5px;
   border: solid 20px rgb(88, 62, 189);
   border-radius: 10px;
@@ -41,15 +41,13 @@ const Details = styled.p`
 export const EducationCard = (props) => {
   return (
     <Container>
-      <Header>
+      <Header >
         <Icon></Icon>
         <Date>{props.date}</Date>
       </Header>
       <College>
         <CollegeName>{props.CollegeName}</CollegeName>
-        <Details>
-         {props.Details}
-        </Details>
+        <Details>{props.Details}</Details>
       </College>
     </Container>
   );

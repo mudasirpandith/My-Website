@@ -51,7 +51,7 @@ export const Education = () => {
       <List>
         {data[1].Colleges.map((college)=>{
           return (
-            <>
+            <> 
               <EducationCard date={college.Date} CollegeName={college.CollegeName} Details={college.Details} />
             </>
           );
