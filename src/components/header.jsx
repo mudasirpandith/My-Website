@@ -1,4 +1,3 @@
-
 import React from "react";
 import styled from "styled-components";
 import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";
@@ -31,14 +30,14 @@ const Icons = styled.div`
   flex: 1;
   gap: 20px;
 `;
-const A = styled.a`
+const Button = styled.button`
   color: inherit;
   padding: 4px;
-  height: 25px;
-  width: 25px;
+  font-size: 20px;
+  pointer: cursor;
+  background: transparent;
   text-align: center;
-  border: 1px solid white;
-  border-radius: 50%;
+  border: 0;
 `;
 export const Header = (props) => {
   const [modeIcon, SetModeIcon] = useState(localStorage.getItem("theme"));
@@ -51,11 +50,9 @@ export const Header = (props) => {
       <Heading>MP</Heading>
 
       <Icons>
-       
-
-        <A type="button" onClick={props.handleClick}>
+        <Button type="button" onClick={props.handleClick}>
           {modeIcon % 2 === 1 ? <DarkModeOutlined /> : <LightModeOutlined />}
-        </A>
+        </Button>
       </Icons>
     </Container>
   );
