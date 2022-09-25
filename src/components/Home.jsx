@@ -72,7 +72,11 @@ export default function Home() {
             <LargeText>
               Hello, I'm <br /> Mudasir Pandith{" "}
             </LargeText>
-            <SmallText>I'm Full Stack Developer...</SmallText>
+            <SmallText>
+              I'm Full Stack Developer. I love to develop softwares and interact
+              people with it. I develop Websites,React/Flutter Apps and Machine
+              Learning Models.
+            </SmallText>
             <Buttons>
               <A href="https://twitter.com/mudasirpandith7">
                 {" "}
