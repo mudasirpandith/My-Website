@@ -4,6 +4,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { Button } from "@mui/material";
 
 const Container = styled.div`
+
   padding-top: 20px;
   background-color: ${({ theme }) => theme.bg};
   color: white;
@@ -33,6 +34,8 @@ const LargeText = styled.h1`
 `;
 const SmallText = styled.p`
   display: flex;
+  padding: 15px 0;
+  font-size: 18px;
   flex-wrap: wrap;
 `;
 const ImageSide = styled.div`
