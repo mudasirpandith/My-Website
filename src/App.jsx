@@ -24,7 +24,7 @@ const Container = styled.div`
 
 function App() {
   const [mode, setMode] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : 0
+    isNaN(localStorage.getItem("theme")) ? 0 : localStorage.getItem("theme")
   );
 
   function handleClick() {
