@@ -9,6 +9,9 @@ import { Testimonials } from "./components/Testimonials";
 import { BlogAndTouchIn } from "./components/BlogAndTouchIn";
 import { Footer } from "./components/Footer";
 import { useState } from "react";
+
+import { ThemeProvider } from "styled-components";
+import { darktheme, lighttheme } from "./utils/theme";
 const Container = styled.div`
   font-family: "Roboto", sans-serif;
 
@@ -20,23 +23,29 @@ const Container = styled.div`
 `;
 
 function App() {
-  console.log(window.scrollY);
-  const [len, setLen] = useState(0);
-  function get(e) {
-    setLen(window.screenY);
-    console.log(len);
+  const [mode, setMode] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : 0
+  );
+
+  function handleClick() {
+    localStorage.setItem("theme", Number(localStorage.getItem("theme")) + 1);
+    setMode(localStorage.getItem("theme"));
   }
+
   return (
     <>
-      <Container onScroll={get}>
-        <Header />
-        <Home />
-        <ExpertiseSection />
-        <MySkills />
-        <Education />
-        <Testimonials />
-        <BlogAndTouchIn />
-        <Footer />
+      <Container>
+        <ThemeProvider theme={mode % 2 === 1 ? lighttheme : darktheme}>
+          <Header handleClick={handleClick} />
+
+          <Home />
+          <ExpertiseSection />
+          <MySkills />
+          <Education />
+          <Testimonials />
+          <BlogAndTouchIn />
+          <Footer />
+        </ThemeProvider>
       </Container>
     </>
   );

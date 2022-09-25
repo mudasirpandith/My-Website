@@ -11,7 +11,7 @@ const Header = styled.div`
 const Icon = styled.div`
   width: 5px;
   height: 5px;
-  border: solid 20px rgb(88, 62, 189);
+  border: solid 20px ${({ theme }) => theme.bg};
   border-radius: 10px;
   background-color: yellow;
   display: flex;
@@ -41,7 +41,7 @@ const Details = styled.p`
 export const EducationCard = (props) => {
   return (
     <Container>
-      <Header >
+      <Header>
         <Icon></Icon>
         <Date>{props.date}</Date>
       </Header>

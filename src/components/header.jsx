@@ -1,9 +1,8 @@
-import Email from "@mui/icons-material/Email";
-import GitHub from "@mui/icons-material/GitHub";
-import LinkedIn from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
 import React from "react";
 import styled from "styled-components";
+import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";
+import { useState } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -11,7 +10,7 @@ const Container = styled.div`
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: rgb(88, 62, 189);
+  background-color: ${({ theme }) => theme.bg};
   color: white;
   flex: 1;
   margin: 0 0 0 0;
@@ -41,23 +40,21 @@ const A = styled.a`
   border: 1px solid white;
   border-radius: 50%;
 `;
-export const Header = () => {
+export const Header = (props) => {
+  const [modeIcon, SetModeIcon] = useState(localStorage.getItem("theme"));
+  function getIcon() {
+    SetModeIcon(localStorage.getItem("theme"));
+  }
+  setInterval(getIcon, 100);
   return (
     <Container>
       <Heading>MP</Heading>
 
       <Icons>
-        <A href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
-          <LinkedIn />
-        </A>
-        <A href="https://github.com/mudasirpandith">
-          <GitHub />
-        </A>
-        <A href="mailto:mudasirpandith789@gmail.com">
-          <Email />
-        </A>
-        <A href="https://www.instagram.com/mudasirpandith_/">
-          <InstagramIcon />
+       
+
+        <A type="button" onClick={props.handleClick}>
+          {modeIcon % 2 === 1 ? <DarkModeOutlined /> : <LightModeOutlined />}
         </A>
       </Icons>
     </Container>

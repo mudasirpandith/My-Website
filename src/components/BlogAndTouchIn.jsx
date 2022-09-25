@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { GetInTouch } from "../utils/GetInTouch";
-
+import Email from "@mui/icons-material/Email";
+import GitHub from "@mui/icons-material/GitHub";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 const Container = styled.div`
   display: flex;
-  background-color: rgb(88, 62, 189);
+  background-color: ${({ theme }) => theme.bg};
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -19,7 +22,7 @@ const Heading = styled.p`
   color: #aaa8a9;
   font-size: 20px;
   @media (max-width: 500px) {
-    margin: 20px ;
+    margin: 20px;
   }
 `;
 const Grid = styled.div`
@@ -55,7 +58,18 @@ const GetIn = styled.div`
 `;
 const Socials = styled.div`
   display: flex;
-  margin: 30px 0 auto 70px;
+  margin: 30px auto;
+  gap: 20px;
+`;
+const A = styled.a`
+  color: inherit;
+  padding: 4px;
+  height: 35px;
+  width: 35px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
 `;
 export const BlogAndTouchIn = () => {
   return (
@@ -76,7 +90,21 @@ export const BlogAndTouchIn = () => {
         <GetInTouch />
       </GetIn>
       <Socials>
-        <LargeText>Social Media ...working</LargeText>
+        <LargeText>
+          {" "}
+          <A href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
+            <LinkedIn />
+          </A>
+          <A href="https://github.com/mudasirpandith">
+            <GitHub />
+          </A>
+          <A href="mailto:mudasirpandith789@gmail.com">
+            <Email />
+          </A>
+          <A href="https://www.instagram.com/mudasirpandith_/">
+            <InstagramIcon />
+          </A>
+        </LargeText>
       </Socials>
     </Container>
   );

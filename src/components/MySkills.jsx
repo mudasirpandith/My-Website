@@ -5,7 +5,7 @@ import { StatusCard } from "../utils/StatusCard";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: rgb(88, 62, 189);
+  background-color: ${({ theme }) => theme.bg};
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   gap: 20px;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ServiceCards } from "../utils/ServiceCards";
+
 const Container = styled.div`
   display: flex;
   margin: 30px auto;
@@ -54,7 +55,7 @@ export const ExpertiseSection = () => {
         <ServiceCards
           logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqajy5jFVLh3az4GF6IXENdHNkLDECpYiYg&usqp=CAU"
           title="Web Development"
-          details="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+          details="Full Stack Websites,Landing Pages "
         />{" "}
         <ServiceCards
           logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0qcY07VwMA45KlZ6pDfbYveClHEu9d2NOg&usqp=CAU"

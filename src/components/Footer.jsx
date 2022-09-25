@@ -75,8 +75,8 @@ export const Footer = () => {
           {" "}
           <Header>MP</Header>
           <SmallText>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            quibusdam totam numquam suscipit laborum animi beatae, facere
+            I love to develop softwares and interact people with it. I
+            design/develop Websites,React/Flutter Apps, Logos, etc.{" "}
           </SmallText>
         </Branding>
         <Nav>

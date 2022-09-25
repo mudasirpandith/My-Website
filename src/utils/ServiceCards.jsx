@@ -31,6 +31,7 @@ const Details = styled.p`
   font-size: 14px;
   display: flex;
 `;
+
 export const ServiceCards = (props) => {
   return (
     <Container>

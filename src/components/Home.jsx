@@ -2,15 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Button } from "@mui/material";
+
 const Container = styled.div`
   padding-top: 20px;
-  background-color: rgb(88, 62, 189);
+  background-color: ${({ theme }) => theme.bg};
   color: white;
   height: 100%;
   display: flex;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  @media (max-width: 450px) {
+  @media (max-width: 900px) {
     flex-direction: column;
   }
 `;
@@ -44,10 +45,10 @@ const ImageSide = styled.div`
   }
 `;
 const Image = styled.img`
-  height: 550px;
+  height: 500px;
   border-radius: 25px;
   border: white solid 1px;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     height: 300px;
   }
 `;
@@ -71,17 +72,12 @@ export default function Home() {
             <LargeText>
               Hello, I'm <br /> Mudasir Pandith{" "}
             </LargeText>
-            <SmallText>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              molestiae, laborum possimus ea aperiam delectus assumenda eum
-              sapiente, fugit voluptates modi dolorum magni reiciendis illum
-              quos adipisci officia eaque. Sequi.
-            </SmallText>
+            <SmallText>I'm Full Stack Developer...</SmallText>
             <Buttons>
               <A href="https://twitter.com/mudasirpandith7">
                 {" "}
                 <Button
-                color='primary'
+                  color="primary"
                   variant="contained"
                   endIcon={<TwitterIcon color="white" />}
                 >

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { EducationCard } from "../utils/EducationCard";
-import {data} from '../utils/data'
+import { data } from "../utils/data";
 const Container = styled.div`
   display: flex;
   background-color: #f7f7f7;
@@ -49,15 +49,18 @@ export const Education = () => {
         </SmallText>
       </Grid>
       <List>
-        {data[1].Colleges.map((college)=>{
+        {data[1].Colleges.map((college, index) => {
           return (
-            <> 
-              <EducationCard date={college.Date} CollegeName={college.CollegeName} Details={college.Details} />
+            <>
+              <EducationCard
+                key={`{index}`}
+                date={college.Date}
+                CollegeName={college.CollegeName}
+                Details={college.Details}
+              />
             </>
           );
         })}
-       
-       
       </List>
     </Container>
   );

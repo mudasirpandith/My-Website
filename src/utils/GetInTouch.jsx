@@ -66,10 +66,10 @@ const Button = styled.button`
   display: flex;
   border: none;
   flex: 1;
-  padding: 10px 100px ;
+  padding: 10px 100px;
   color: white;
   margin: 20px auto;
-  background-color: rgb(88, 62, 189);
+  background-color: ${({ theme }) => theme.bg};
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -94,7 +94,7 @@ export const GetInTouch = () => {
           <Input type="email" placeholder="Email" />
           <Input type="tel" placeholder="Phone Number" />
           <Input type="text" placeholder="Message" />
-          <Button>Submit</Button>
+          <Button>Send</Button>
         </Form>
       </FormSide>
     </Container>
