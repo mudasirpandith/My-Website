@@ -57,7 +57,7 @@ const Footerdiv = styled.div`
 `;
 const NavItems = styled.a`
   cursor: pointer;
-  color: #aaa8a9;
+  color: #aaa8a9; 
   font-size: 14px;
   margin: 5px 0;
 `;
