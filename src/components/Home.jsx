@@ -12,6 +12,7 @@ const Container = styled.div`
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   @media (max-width: 900px) {
+    padding-top:55px;
     flex-direction: column;
   }
 `;
@@ -50,6 +51,7 @@ const Image = styled.img`
   height: 500px;
   border-radius: 25px;
   border: white solid 1px;
+  
   @media (max-width: 650px) {
     height: 300px;
   }

@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+// import { useState } from "react";
+// const Mailgun = require("mailgun.js");
+
 const Container = styled.div`
   display: flex;
   background-color: #f7f7f7;
@@ -61,6 +64,16 @@ const Input = styled.input`
   width: 280px;
   margin: 20px auto;
   border: 1px solid #aaa8a9;
+  border-radius: 10px;
+`;
+const TextArea = styled.textarea`
+  display: flex;
+  padding: 10px;
+  height: 60px;
+  width: 280px;
+  margin: 20px auto;
+  border: 1px solid #aaa8a9;
+  border-radius: 10px;
 `;
 const Button = styled.button`
   display: flex;
@@ -73,8 +86,33 @@ const Button = styled.button`
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
+  &:hover {
+    background-color: green;
+  }
 `;
 export const GetInTouch = () => {
+  // var x = "sandbox030000e870fd41dd8da1dd7e0c300943.mailgun.org";
+  // console.log(x);
+  // const [formData, setFormData] = useState({ name: "Mudasir" });
+
+  async function send(e) {
+    //   console.log("clicked");
+    e.preventDefault();
+    //   const mailgun = new Mailgun(formData);
+    //   const mg = mailgun.client({
+    //     username: "api",
+    //     key: "5d798ff018bd09cdc59c35f9aad1e82c-4534758e-6df45b9c",
+    //   });
+    //   mg.messages
+    //     .create(x, {
+    //       from: "Mailgun Sandbox <postmaster@sandbox030000e870fd41dd8da1dd7e0c300943.mailgun.org>",
+    //       to: ["mudasirpandith789@gmail.com"],
+    //       subject: "Hello",
+    //       text: "Testing some Mailgun awesomness!",
+    //     })
+    //     .then((msg) => console.log(msg)) // logs response data
+    //     .catch((err) => console.log(err));
+  }
   return (
     <Container>
       <TextSide>
@@ -93,8 +131,8 @@ export const GetInTouch = () => {
           <Input type="text" placeholder="Name" />
           <Input type="email" placeholder="Email" />
           <Input type="tel" placeholder="Phone Number" />
-          <Input type="text" placeholder="Message" />
-          <Button>Send</Button>
+          <TextArea type="text" placeholder="Message" />
+          <Button onClick={send}>Send</Button>
         </Form>
       </FormSide>
     </Container>
