@@ -40,7 +40,7 @@ const Details = styled.p`
 `;
 export const EducationCard = (props) => {
   return (
-    <Container>
+    <Container >
       <Header>
         <Icon></Icon>
         <Date>{props.date}</Date>

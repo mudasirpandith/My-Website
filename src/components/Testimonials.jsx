@@ -42,15 +42,15 @@ export const Testimonials = () => {
       </Title>
 
       <Cards>
-        {data[2].TestMon.map((Test) => {
+        {data[2].TestMon.map((Test,index) => {
           return (
-            <>
+            <React.Fragment key={index}>
               <TestimonialCard
                 Details={Test.Details}
                 imgUrl={Test.imgUrl}
                 User={Test.User}
               />
-            </>
+            </React.Fragment>
           );
         })}
       </Cards>

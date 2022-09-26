@@ -57,7 +57,7 @@ const Footerdiv = styled.div`
 `;
 const NavItems = styled.a`
   cursor: pointer;
-  color: #aaa8a9; 
+  color: #aaa8a9;
   font-size: 14px;
   margin: 5px 0;
 `;
@@ -101,7 +101,7 @@ export const Footer = () => {
       </Grid>
       <Footerdiv>
         <FooterText>
-          Developed By Mudasir Pandith © {new Date().getFullYear()}
+          Developed By Mudasir Pandith © 2022-{new Date().getFullYear()}
         </FooterText>
       </Footerdiv>
     </Container>

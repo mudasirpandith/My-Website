@@ -4,5 +4,5 @@ export const darktheme = {
 };
 export const lighttheme = {
   color: "white",
-  bg: "rgb(88, 62, 189)",
+  bg: "#1C6758",
 };

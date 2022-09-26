@@ -49,16 +49,15 @@ export const Education = () => {
         </SmallText>
       </Grid>
       <List>
-        {data[1].Colleges.map((college, index) => {
+        {data[1].Colleges.map((college, index1) => {
           return (
-            <>
+            <React.Fragment key={`1${index1}`}>
               <EducationCard
-                key={`{index}`}
                 date={college.Date}
                 CollegeName={college.CollegeName}
                 Details={college.Details}
               />
-            </>
+            </React.Fragment>
           );
         })}
       </List>

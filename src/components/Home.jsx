@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Button } from "@mui/material";
-
+import Typewriter from "typewriter-effect";
 const Container = styled.div`
-
   padding-top: 20px;
   background-color: ${({ theme }) => theme.bg};
   color: white;
@@ -73,7 +72,17 @@ export default function Home() {
         <Container>
           <TextSide>
             <LargeText>
-              Hello, I'm <br /> Mudasir Pandith{" "}
+              Hello, I'm
+               </LargeText>
+              <LargeText>
+                <Typewriter
+                  options={{
+                    strings: ["Mudasir Pandith", "Full Stack Developer"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+             
             </LargeText>
             <SmallText>
               I'm Full Stack Developer. I love to develop softwares and interact
@@ -83,7 +92,7 @@ export default function Home() {
             <Buttons>
               <A href="https://twitter.com/mudasirpandith7">
                 {" "}
-                <Button
+                <Button 
                   color="primary"
                   variant="contained"
                   endIcon={<TwitterIcon color="white" />}

@@ -65,9 +65,9 @@ export const MySkillsCard = () => {
         </SmallText>
       </TextSide>
       <Skills>
-        {data[0].Skills.map((skill) => {
+        {data[0].Skills.map((skill,index) => {
           return (
-            <React.Fragment>
+            <React.Fragment key={index}>
               <SkillRange
                 key={skill.id}
                 Skill={skill.Skill}
