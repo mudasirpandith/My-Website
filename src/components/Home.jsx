@@ -12,7 +12,7 @@ const Container = styled.div`
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   @media (max-width: 900px) {
-    padding-top:55px;
+    padding-top: 55px;
     flex-direction: column;
   }
 `;
@@ -31,12 +31,44 @@ const TextSide = styled.div`
 const LargeText = styled.h1`
   display: flex;
   margin: 0;
+  font-family: monospace;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  font-family: monospace;
+  text-rendering: auto;
+  color: white;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
 `;
 const SmallText = styled.p`
   display: flex;
   padding: 15px 0;
   font-size: 18px;
   flex-wrap: wrap;
+  font-family: monospace;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  font-family: monospace;
+  text-rendering: auto;
+  color: white;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
 `;
 const ImageSide = styled.div`
   display: flex;
@@ -51,7 +83,7 @@ const Image = styled.img`
   height: 500px;
   border-radius: 25px;
   border: white solid 1px;
-  
+
   @media (max-width: 650px) {
     height: 300px;
   }
@@ -73,18 +105,15 @@ export default function Home() {
       <div>
         <Container>
           <TextSide>
+            <LargeText>Hello, I'm</LargeText>
             <LargeText>
-              Hello, I'm
-               </LargeText>
-              <LargeText>
-                <Typewriter
-                  options={{
-                    strings: ["Mudasir Pandith", "Full Stack Developer"],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-             
+              <Typewriter
+                options={{
+                  strings: ["Mudasir Pandith", "Full Stack Developer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </LargeText>
             <SmallText>
               I'm Full Stack Developer. I love to develop softwares and interact
@@ -94,7 +123,7 @@ export default function Home() {
             <Buttons>
               <A href="https://twitter.com/mudasirpandith7">
                 {" "}
-                <Button 
+                <Button
                   color="primary"
                   variant="contained"
                   endIcon={<TwitterIcon color="white" />}
