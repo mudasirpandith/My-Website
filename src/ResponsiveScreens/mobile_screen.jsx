@@ -66,7 +66,7 @@ export default function MobileScreen() {
   AOS.init();
   return (
     <div
-      style={{ height: window.innerHeight }}
+      style={{ height: window.innerHeight - 60 }}
       data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1000"

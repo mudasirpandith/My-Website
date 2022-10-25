@@ -21,7 +21,9 @@ const TextSide = styled.div`
   display: flex;
   flex-direction: column;
   flex: 3;
-  margin: auto 0 auto 70px;
+ justify-content: center;
+ margin: -60px 0 0 40px;
+  
 `;
 const LargeText = styled.h1`
   display: flex;
@@ -47,8 +49,9 @@ const SmallText = styled.p`
 const ImageSide = styled.div`
   display: flex;
   flex: 5;
-  margin: auto;
+  /* margin: auto; */
   padding: 40px 0;
+  justify-content: center;
 `;
 const Image = styled.img`
   height: 400px;

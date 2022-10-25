@@ -5,10 +5,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 200px;
+  height: 150px;
   padding: 10px;
-
   border-radius: 10px;
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
 `;
 const Logo = styled.img`
   display: flex;
@@ -23,11 +25,12 @@ const TextPart = styled.div`
 `;
 const Title = styled.h1`
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   font-size: 20px;
 `;
 const Details = styled.p`
   color: #aaa8a9;
+  margin: 0 auto;
   font-size: 14px;
   display: flex;
 `;
