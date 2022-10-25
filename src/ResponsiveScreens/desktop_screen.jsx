@@ -21,9 +21,7 @@ const TextSide = styled.div`
   display: flex;
   flex-direction: column;
   flex: 3;
- justify-content: center;
- margin: -60px 0 0 40px;
-  
+  margin: auto 0 auto 70px;
 `;
 const LargeText = styled.h1`
   display: flex;
@@ -49,9 +47,8 @@ const SmallText = styled.p`
 const ImageSide = styled.div`
   display: flex;
   flex: 5;
-  /* margin: auto; */
+  margin: auto;
   padding: 40px 0;
-  justify-content: center;
 `;
 const Image = styled.img`
   height: 400px;
@@ -72,12 +69,9 @@ export default function DesktopScreen() {
   AOS.init();
   return (
     <>
-      <div
-        style={{ height: window.innerHeight }}
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
+      <div style={{ height: window.innerHeight }} data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <Container>
           <TextSide>
             <LargeText>Hello, I'm</LargeText>
