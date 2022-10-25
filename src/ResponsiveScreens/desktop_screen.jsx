@@ -3,10 +3,12 @@ import styled from "styled-components";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Button } from "@mui/material";
 import Typewriter from "typewriter-effect";
+import AOS from "aos";
 const Container = styled.div`
   padding-top: 20px;
   background-color: ${({ theme }) => theme.bg};
   color: white;
+  height: 100%;
   display: flex;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -51,7 +53,6 @@ const ImageSide = styled.div`
 const Image = styled.img`
   height: 400px;
   border-radius: 25px;
-  border: white solid 1px;
 `;
 const Buttons = styled.div`
   display: flex;
@@ -65,9 +66,15 @@ const A = styled.a`
 `;
 
 export default function DesktopScreen() {
+  AOS.init();
   return (
     <>
-      <div style={{ height: window.innerHeight }}>
+      <div
+        style={{ height: window.innerHeight }}
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <Container>
           <TextSide>
             <LargeText>Hello, I'm</LargeText>

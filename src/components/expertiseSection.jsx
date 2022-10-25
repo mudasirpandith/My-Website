@@ -4,7 +4,7 @@ import { ServiceCards } from "../utils/ServiceCards";
 
 const Container = styled.div`
   display: flex;
-  margin: 30px auto;
+  margin: 20px auto;
   flex-wrap: wrap;
   width: 80%;
   flex-direction: column;
