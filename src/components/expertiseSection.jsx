@@ -5,6 +5,7 @@ import { ServiceCards } from "../utils/ServiceCards";
 const Container = styled.div`
   display: flex;
   margin: 30px auto;
+  flex-wrap: wrap;
   width: 80%;
   flex-direction: column;
 `;
@@ -14,6 +15,7 @@ const Heading = styled.p`
 `;
 const Grid = styled.div`
   display: flex;
+  flex-wrap: wrap;
   @media (max-width: 500px) {
     flex-direction: column;
   }
@@ -31,6 +33,7 @@ const Services = styled.div`
   display: flex;
   gap: 20px;
   margin: auto;
+  flex-wrap: wrap;
   @media (max-width: 500px) {
     flex-direction: column;
   }

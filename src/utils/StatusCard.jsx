@@ -31,10 +31,8 @@ export const StatusCard = (props) => {
   return (
     <Container>
       <Icon src={props.imgUrl} />
-      <Number>12</Number>
-      <Details>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sed
-      </Details>
+      <Number>2</Number>
+      <Details>Number of projects done</Details>
     </Container>
   );
 };

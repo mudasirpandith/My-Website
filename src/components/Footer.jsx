@@ -13,6 +13,7 @@ const Grid = styled.div`
   display: flex;
   padding-top: 50px;
   padding-bottom: 40px;
+  flex-wrap: wrap;
   margin: auto;
   gap: 20px;
   width: 80%;
@@ -29,6 +30,7 @@ const Nav = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  flex-wrap: wrap;
 `;
 const Contact = styled.div`
   display: flex;

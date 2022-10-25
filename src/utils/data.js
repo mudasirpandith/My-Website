@@ -28,7 +28,7 @@ export const data = [
       },
       {
         id: 5,
-        Skill: "JavaScriot",
+        Skill: "JavaScript",
         SkillLogo:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
       },
@@ -70,9 +70,9 @@ export const data = [
       },
       {
         id: 12,
-        Skill: "Pandas",
+        Skill: "Flutter",
         SkillLogo:
-          "https://www.cilans.net/wp-content/uploads/2019/12/Python-Pandas-logo.png",
+          "https://user-images.githubusercontent.com/51419598/152648731-567997ec-ac1c-4a9c-a816-a1fb1882abbe.png",
       },
     ],
   },

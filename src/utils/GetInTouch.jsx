@@ -127,12 +127,14 @@ export const GetInTouch = () => {
       </TextSide>
       <FormSide>
         <LargeText>Want a collaboration?</LargeText>
-        <Form action="#">
+        <Form action="">
           <Input type="text" placeholder="Name" />
           <Input type="email" placeholder="Email" />
           <Input type="tel" placeholder="Phone Number" />
           <TextArea type="text" placeholder="Message" />
-          <Button onClick={send}>Send</Button>
+          <Button onClick={send} title="Send Message">
+            Send
+          </Button>
         </Form>
       </FormSide>
     </Container>

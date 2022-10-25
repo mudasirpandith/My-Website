@@ -12,6 +12,7 @@ const Container = styled.div`
 `;
 const SkillSet = styled.div`
   display: flex;
+  margin: auto;
 `;
 const Statistics = styled.div`
   display: flex;
@@ -33,8 +34,8 @@ export const MySkills = () => {
       <Statistics>
         <StatusCard imgUrl="https://www.itij.com/sites/default/files/styles/full_size_view/public/2020-11/allianz-partners-award.jpg?h=b7858df9&itok=IGRJDtJb" />{" "}
         <StatusCard imgUrl="https://t3.ftcdn.net/jpg/03/37/67/30/360_F_337673028_wZqTUA4lx1NuzIQZtfTVPbRnFcygY0hL.jpg" />{" "}
-        <StatusCard imgUrl="https://t3.ftcdn.net/jpg/03/37/67/30/360_F_337673028_wZqTUA4lx1NuzIQZtfTVPbRnFcygY0hL.jpg" />{" "}
-        <StatusCard imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQeEJGfa0IIOlMolXqZDv0g80GAs5CNms5Q&usqp=CAU" />{" "}
+        {/* <StatusCard imgUrl="https://t3.ftcdn.net/jpg/03/37/67/30/360_F_337673028_wZqTUA4lx1NuzIQZtfTVPbRnFcygY0hL.jpg" />{" "}
+        <StatusCard imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQeEJGfa0IIOlMolXqZDv0g80GAs5CNms5Q&usqp=CAU" />{" "} */}
       </Statistics>
     </Container>
   );

@@ -6,8 +6,6 @@ import GitHub from "@mui/icons-material/GitHub";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
-
-
 const Container = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.bg};
@@ -43,6 +41,24 @@ const LargeText = styled.h1`
     margin: 20px 10px;
   }
 `;
+
+const Icon = styled.h1`
+  margin: auto 0 auto 70px;
+  display: flex;
+  flex: 4;
+
+  @media (max-width: 500px) {
+    margin: 20px 10px;
+  }
+`;
+const SocialHeader = styled.h1`
+  margin: auto 0 auto 70px;
+  display: flex;
+  flex: 4;
+  @media (max-width: 500px) {
+    margin: 5px 10px;
+  }
+`;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
@@ -63,6 +79,9 @@ const Socials = styled.div`
   display: flex;
   margin: 30px auto;
   gap: 20px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 const A = styled.a`
   color: inherit;
@@ -73,9 +92,16 @@ const A = styled.a`
   text-align: center;
   border: 1px solid white;
   border-radius: 50%;
+  &:hover {
+    color: red;
+    background-color: ${({ theme }) => theme.color};
+    color: ${({ theme }) => theme.bg};
+  }
+  .title {
+    color: red;
+  }
 `;
 export const BlogAndTouchIn = () => {
- 
   return (
     <Container>
       <Heading>STORIES</Heading>
@@ -94,21 +120,28 @@ export const BlogAndTouchIn = () => {
         <GetInTouch />
       </GetIn>
       <Socials>
-        <LargeText>
+        <SocialHeader>Social Media</SocialHeader>
+        <Icon>
           {" "}
-          <A href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/">
+          <A
+            href="https://www.linkedin.com/in/mudasir-pandith-a04b04202/"
+            title="LinkedIn Profile"
+          >
             <LinkedIn />
           </A>
-          <A href="https://github.com/mudasirpandith">
+          <A href="https://github.com/mudasirpandith" title="Github Profile">
             <GitHub />
           </A>
-          <A href="mailto:mudasirpandith789@gmail.com">
+          <A href="mailto:mudasirpandith789@gmail.com" title="Mail me">
             <Email />
           </A>
-          <A href="https://www.instagram.com/mudasirpandith_/">
+          <A
+            href="https://www.instagram.com/mudasirpandith_/"
+            title="Instagram Profile"
+          >
             <InstagramIcon />
           </A>
-        </LargeText>
+        </Icon>
       </Socials>
     </Container>
   );
