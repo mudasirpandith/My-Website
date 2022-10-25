@@ -69,7 +69,7 @@ export default function MobileScreen() {
       style={{ height: window.innerHeight }}
       data-aos="fade-down"
       data-aos-easing="linear"
-      data-aos-duration="1500"
+      data-aos-duration="1000"
     >
       <Container>
         <ImageSide>
