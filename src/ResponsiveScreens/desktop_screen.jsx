@@ -7,7 +7,6 @@ const Container = styled.div`
   padding-top: 20px;
   background-color: ${({ theme }) => theme.bg};
   color: white;
-  height: 100%;
   display: flex;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -26,43 +25,22 @@ const LargeText = styled.h1`
   display: flex;
   margin: 0;
   font-size: 40px;
-  text-rendering: auto;
-  color: fieldtext;
   letter-spacing: normal;
   word-spacing: normal;
   line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
 
-  text-rendering: auto;
   color: pink;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
 `;
 const SmallText = styled.p`
   display: flex;
   padding: 15px 0;
   font-size: 18px;
   flex-wrap: wrap;
-
-  text-rendering: auto;
-  color: fieldtext;
   letter-spacing: normal;
   word-spacing: normal;
   line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
 
-  text-rendering: auto;
   color: white;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
 `;
 const ImageSide = styled.div`
   display: flex;
@@ -89,7 +67,7 @@ const A = styled.a`
 export default function DesktopScreen() {
   return (
     <>
-      <div>
+      <div style={{ height: window.innerHeight }}>
         <Container>
           <TextSide>
             <LargeText>Hello, I'm</LargeText>

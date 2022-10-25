@@ -17,9 +17,8 @@ const Container = styled.div`
 const TextSide = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 6;
+  flex: 4;
   margin: auto 20px;
-
   align-items: left;
 `;
 const LargeText = styled.h1`
@@ -34,7 +33,7 @@ const LargeText = styled.h1`
 `;
 const SmallText = styled.p`
   display: flex;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   font-size: 18px;
   flex-wrap: wrap;
 
@@ -48,13 +47,11 @@ const ImageSide = styled.div`
 const Image = styled.img`
   border-radius: 25px;
   filter: drop-shadow(2px 2px 2px pink);
-
-  height: 200px;
+  height: 300px;
 `;
 const Buttons = styled.div`
   display: flex;
-  margin: auto;
-
+  margin: 0 auto;
   gap: 10px;
 `;
 
