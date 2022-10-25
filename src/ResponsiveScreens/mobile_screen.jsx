@@ -51,7 +51,7 @@ const Image = styled.img`
 `;
 const Buttons = styled.div`
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   gap: 10px;
 `;
 
