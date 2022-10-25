@@ -11,22 +11,16 @@ const Container = styled.div`
   display: flex;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  @media (max-width: 800px) {
-    padding-top: 55px;
-    flex-direction: column;
-  }
+  flex-direction: column;
 `;
 
 const TextSide = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 3;
-  margin: auto 0 auto 70px;
-  @media (max-width: 450px) {
-    margin: 30px 10px;
+  flex: 6;
+  margin: auto 20px;
 
-    align-items: left;
-  }
+  align-items: left;
 `;
 const LargeText = styled.h1`
   display: flex;
@@ -37,54 +31,25 @@ const LargeText = styled.h1`
   letter-spacing: normal;
   word-spacing: normal;
   line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-
-  text-rendering: auto;
-
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
 `;
 const SmallText = styled.p`
   display: flex;
   padding: 15px 0;
   font-size: 18px;
   flex-wrap: wrap;
-  text-rendering: auto;
 
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-
-  text-rendering: auto;
   color: white;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
 `;
 const ImageSide = styled.div`
   display: flex;
-  flex: 5;
   margin: auto;
-  padding: 40px 0;
-  @media (max-width: 650px) {
-    margin: -90px 0 -20px 0;
-  }
+  flex: 4;
 `;
 const Image = styled.img`
-  height: 500px;
   border-radius: 25px;
   filter: drop-shadow(2px 2px 2px pink);
-  @media (max-width: 650px) {
-    height: 200px;
-  }
+
+  height: 200px;
 `;
 const Buttons = styled.div`
   display: flex;
@@ -99,7 +64,7 @@ const A = styled.a`
 
 export default function MobileScreen() {
   return (
-    <>
+    <div style={{ height: window.innerHeight }}>
       <Container>
         <ImageSide>
           <Image
@@ -143,6 +108,6 @@ export default function MobileScreen() {
           </Buttons>
         </TextSide>
       </Container>
-    </>
+    </div>
   );
 }
