@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { MySkillsCard } from "../utils/MySkillsCard";
 import { StatusCard } from "../utils/StatusCard";
+import AOS from 'aos'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,6 +14,7 @@ const Container = styled.div`
 const SkillSet = styled.div`
   display: flex;
   margin: auto;
+  flex-direction: column;
 `;
 const Statistics = styled.div`
   display: flex;
@@ -25,10 +27,17 @@ const Statistics = styled.div`
   }
 `;
 export const MySkills = () => {
+  AOS.init()
   return (
-    <Container>
+    <Container 
+     data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1000"
+    >
       <SkillSet>
         <MySkillsCard />
+       
+     
       </SkillSet>
 
       <Statistics>

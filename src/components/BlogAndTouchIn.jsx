@@ -5,7 +5,7 @@ import Email from "@mui/icons-material/Email";
 import GitHub from "@mui/icons-material/GitHub";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
+import AOS from 'aos'
 const Container = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.bg};
@@ -102,8 +102,12 @@ const A = styled.a`
   }
 `;
 export const BlogAndTouchIn = () => {
+  AOS.init()
   return (
-    <Container>
+    <Container 
+    data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1000">
       <Heading>STORIES</Heading>
       <Grid>
         <LargeText>Blog Update</LargeText>

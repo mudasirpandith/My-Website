@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { EducationCard } from "../utils/EducationCard";
 import { data } from "../utils/data";
+
+import AOS from 'aos'
 const Container = styled.div`
   display: flex;
   background-color: #f7f7f7;
@@ -35,8 +37,13 @@ const List = styled.div`
 `;
 
 export const Education = () => {
+  AOS.init()
   return (
-    <Container>
+    <Container 
+      data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1000"
+    >
       <Heading>MY EDUCATION</Heading>
       <Grid>
         <LargeText>Education</LargeText>

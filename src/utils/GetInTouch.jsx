@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
-// import { useState } from "react";
-// const Mailgun = require("mailgun.js");
-
+import emailjs from "@emailjs/browser";
+import Snackbar from "@mui/material/Snackbar";
+import { Alert } from "@mui/material";
 const Container = styled.div`
   display: flex;
   background-color: #f7f7f7;
@@ -91,28 +91,47 @@ const Button = styled.button`
   }
 `;
 export const GetInTouch = () => {
-  // var x = "sandbox030000e870fd41dd8da1dd7e0c300943.mailgun.org";
-  // console.log(x);
-  // const [formData, setFormData] = useState({ name: "Mudasir" });
+  const [open, setOpen] = useState(false);
+  const [send, setSend] = useState(false);
 
-  async function send(e) {
-    //   console.log("clicked");
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+    setSend(false);
+  };
+
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-    //   const mailgun = new Mailgun(formData);
-    //   const mg = mailgun.client({
-    //     username: "api",
-    //     key: "5d798ff018bd09cdc59c35f9aad1e82c-4534758e-6df45b9c",
-    //   });
-    //   mg.messages
-    //     .create(x, {
-    //       from: "Mailgun Sandbox <postmaster@sandbox030000e870fd41dd8da1dd7e0c300943.mailgun.org>",
-    //       to: ["mudasirpandith789@gmail.com"],
-    //       subject: "Hello",
-    //       text: "Testing some Mailgun awesomness!",
-    //     })
-    //     .then((msg) => console.log(msg)) // logs response data
-    //     .catch((err) => console.log(err));
-  }
+
+    emailjs
+      .sendForm(
+        "service_0mz7d4e",
+        "template_9lqekk8",
+        form.current,
+        "3yCvYpWOA0-N3RzSJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setOpen(true);
+        },
+        (error) => {
+          console.log(error.text);
+          window.alert("There was some error");
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <Container>
       <TextSide>
@@ -127,14 +146,30 @@ export const GetInTouch = () => {
       </TextSide>
       <FormSide>
         <LargeText>Want a collaboration?</LargeText>
-        <Form action="">
-          <Input type="text" placeholder="Name" />
-          <Input type="email" placeholder="Email" />
-          <Input type="tel" placeholder="Phone Number" />
-          <TextArea type="text" placeholder="Message" />
-          <Button onClick={send} title="Send Message">
+        <Form ref={form} onSubmit={sendEmail} className="form" id="myForm">
+          <Input required type="text" placeholder="Name" name="name" />
+          <Input required type="email" placeholder="Email" name="email" />
+          <Input
+            required
+            type="tel"
+            placeholder="Phone Number"
+            name="phoneNumber"
+          />
+          <TextArea required type="text" placeholder="Message" name="message" />
+          <Button type="submit" title="Send Message" onClick={handleClick}>
             Send
           </Button>
+          {send && (
+            <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
+              <Alert
+                onClose={handleClose}
+                severity="success"
+                sx={{ width: "100%" }}
+              >
+                message sended ✔︎
+              </Alert>
+            </Snackbar>
+          )}
         </Form>
       </FormSide>
     </Container>

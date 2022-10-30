@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { SkillRange } from "./SkillRange";
 import { data } from "../utils/data";
+import CustomizedDialogs from "./alert";
 const Container = styled.div`
   display: flex;
   margin: 8px 5px;
@@ -76,6 +77,7 @@ export const MySkillsCard = () => {
             </React.Fragment>
           );
         })}
+         <CustomizedDialogs />
       </Skills>
     </Container>
   );
