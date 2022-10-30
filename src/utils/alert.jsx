@@ -5,7 +5,6 @@ import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 
-import MoreSkills from '../images/skilli.mp4'
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -41,7 +40,7 @@ export default function CustomizedDialogs({props}) {
       
         <DialogContent style={{backgroundColor:"teal"}}>
         <video width="300" height="300" loop autoPlay>
-      <source src={MoreSkills} type="video/mp4"/>
+      <source src="https://firebasestorage.googleapis.com/v0/b/storage-ec4b0.appspot.com/o/skilli.mp4?alt=media&token=091f4d26-0cab-4675-9784-e55c3d2b9c07" type="video/mp4"/>
      </video>  </DialogContent>
         <DialogActions style={{backgroundColor:"teal"}}>
           <Button color='inherit' onClick={handleClose} >
