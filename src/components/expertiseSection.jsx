@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ServiceCards } from "../utils/ServiceCards";
-import AOS from "aos";
+
 const Container = styled.div`
   display: flex;
   margin: 20px auto;
@@ -39,12 +39,10 @@ const Services = styled.div`
   }
 `;
 export const ExpertiseSection = () => {
-  AOS.init();
+ 
   return (
     <Container
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
+    
     >
       <Heading>MY EXPERTISE</Heading>
       <Grid>

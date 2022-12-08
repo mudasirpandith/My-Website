@@ -67,17 +67,15 @@ export default function MobileScreen() {
   return (
     <div
       style={{ height: window.innerHeight - 60 }}
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
+    
     >
-      <Container>
+      <Container id="home">
         <ImageSide>
           <Image
             src="https://media-exp1.licdn.com/dms/image/C4D03AQFv0o4-1yjKag/profile-displayphoto-shrink_400_400/0/1651503799357?e=1668038400&v=beta&t=LkDHqWbTEAWH9IXMOMf9YSBsVKnahI_uJz0kIa2ZM94"
             alt=""
           />
-        </ImageSide>
+        </ImageSide>0
         <TextSide>
           <LargeText>Hi, I'm</LargeText>
           <LargeText>

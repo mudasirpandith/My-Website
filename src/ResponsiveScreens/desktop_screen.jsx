@@ -72,7 +72,7 @@ export default function DesktopScreen() {
       <div style={{ height: window.innerHeight }} data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">
-        <Container>
+        <Container id="home">
           <TextSide>
             <LargeText>Hello, I'm</LargeText>
             <LargeText>

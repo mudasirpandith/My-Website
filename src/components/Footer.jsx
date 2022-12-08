@@ -83,8 +83,9 @@ export const Footer = () => {
         </Branding>
         <Nav>
           <Header>LINKS</Header>
+        
           <NavItems href="/">Home</NavItems>
-          <NavItems>Skills</NavItems>
+          <NavItems href="#skils">Skills</NavItems>
           <NavItems>Projects</NavItems>
           <NavItems>Blogs</NavItems>
         </Nav>

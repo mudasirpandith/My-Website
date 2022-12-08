@@ -38,7 +38,6 @@ function App() {
       <Container>
         <ThemeProvider theme={mode % 2 === 1 ? lighttheme : darktheme}>
           <Header handleClick={handleClick} />
-
           <Home />
           <ExpertiseSection />
           <MySkills />

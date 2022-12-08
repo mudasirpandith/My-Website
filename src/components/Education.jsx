@@ -40,9 +40,7 @@ export const Education = () => {
   AOS.init()
   return (
     <Container 
-      data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1000"
+   
     >
       <Heading>MY EDUCATION</Heading>
       <Grid>

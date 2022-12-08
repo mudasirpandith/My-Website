@@ -25,7 +25,6 @@ const Title = styled.div`
 `;
 const Cards = styled.div`
   display: flex;
-
   gap: 20px;
   flex-wrap: wrap;
   margin: auto;
