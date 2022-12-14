@@ -9,15 +9,15 @@ const Header = styled.div`
   gap: 20px;
 `;
 const Icon = styled.div`
-  width: 5px;
-  height: 5px;
-  border: solid 20px ${({ theme }) => theme.bg};
-  border-radius: 10px;
-  background-color: yellow;
+  width: 2px;
+  height: 2px;
+  border: solid 10px ${({ theme }) => theme.bg};
+  border-radius: 50%;
+ 
   display: flex;
 `;
 const Date = styled.h2`
-  display: flex;
+  display: flex;  color: #525050;
   margin: 0;
 `;
 
@@ -32,11 +32,13 @@ const College = styled.div`
 const CollegeName = styled.p`
   display: flex;
   margin: 0;
+  line-height: 3ch;
 `;
 const Details = styled.p`
   display: flex;
   color: #aaa8a9;
   flex: 4;
+  line-height: 3ch;
 `;
 export const EducationCard = (props) => {
   return (

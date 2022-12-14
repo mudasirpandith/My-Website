@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 150px;
+  height: 170px;
   padding: 10px;
   border-radius: 10px;
   @media screen and (max-width: 500px) {
@@ -14,24 +14,27 @@ const Container = styled.div`
 `;
 const Logo = styled.img`
   display: flex;
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
 `;
 const TextPart = styled.div`
   display: flex;
 
   padding-top: 30px;
   flex-direction: column;
+  justify-content: center;
 `;
 const Title = styled.h1`
   display: flex;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 17px;
 `;
 const Details = styled.p`
   color: #aaa8a9;
-  margin: 0 auto;
-  font-size: 14px;
+  margin: 5px auto 0 auto;
+  font-size: 12px;
+ justify-content: center;
+ line-height: 3ch;
   display: flex;
 `;
 

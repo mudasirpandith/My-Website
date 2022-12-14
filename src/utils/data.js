@@ -95,17 +95,17 @@ export const data = [
     TestMon: [
       {
         Details:
-          "quo in officiis. Doloribus, consectetur veniam asperiores rationesequi tempora beatae nulla minima assumenda hic, perferendis eveniet consequuntur consequatur! Veritatis",
-        User: "Mudasir Pandith",
+          "I recently worked with Mudasir Pandith on a website development project, and I was extremely satisfied with the end result. Mudasir was professional and knowledgeable, and he took the time to understand my needs and vision. The website he created for me was beautiful and effective, and I am grateful for his hard work and dedication. I would highly recommend Mudasir for web development services.",
+        User: "Abid Khaliq",
         imgUrl:
-          "https://thumbs.dreamstime.com/b/golden-profile-avatar-icon-symbol-social-network-user-d-illustration-92300656.jpg",
+          "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png",
       },
       {
         Details:
-          "quo in officiis. Doloribus, consectetur veniam asperiores rationesequi tempora beatae nulla minima assumenda hic, perferendis eveniet consequuntur consequatur! Veritatis",
+          "I was impressed with Mudasir's professionalism and dedication to the project, and I would highly recommend him to anyone in need of web development services.The website he created for me is exactly what I was looking for. Thank you, Mudasir, for your hard work and for helping me to create a successful and effective website for my business. I look forward to working with you again in the future.",
         User: "Arvind",
         imgUrl:
-          "https://thumbs.dreamstime.com/b/golden-profile-avatar-icon-symbol-social-network-user-d-illustration-92300656.jpg",
+          "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png",
       },
     ],
   },

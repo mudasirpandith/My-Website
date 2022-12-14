@@ -27,10 +27,12 @@ const LargeText = styled.h1`
   display: flex;
   flex: 4;
   margin: 10px 0;
+  color: #525050;
 `;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
+  line-height: 3ch;
 `;
 const TextSide = styled.div`
   display: flex;
@@ -138,10 +140,7 @@ export const GetInTouch = () => {
         <Heading>Contact</Heading>
         <LargeText>Get In Touch</LargeText>
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
-          voluptates iste nihil minima provident modi aut iusto necessitatibus
-          asperiores blanditiis esse nisi, consectetur magnam natus, illum quos
-          laboriosam reprehenderit reiciendis.
+        I am dedicated to providing the highest level of service and support to my clients, and I am committed to delivering successful projects on time and within budget. If you have an idea for a web or mobile application and are looking for a skilled and experienced developer to bring it to life, please don't hesitate to contact me. I would be happy to discuss your project in more detail and provide you with a personalized quote. Thank you for considering me for your development needs, and I look forward to the opportunity to work with you.
         </SmallText>
       </TextSide>
       <FormSide>

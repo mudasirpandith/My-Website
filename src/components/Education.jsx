@@ -23,12 +23,13 @@ const Grid = styled.div`
 `;
 const LargeText = styled.h1`
   display: flex;
-  flex: 4;
+  flex: 4;  color: #525050;
 `;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
   flex: 4;
+  line-height: 3ch;
 `;
 const List = styled.div`
   display: flex;
@@ -47,10 +48,7 @@ export const Education = () => {
         <LargeText>Education</LargeText>
         <SmallText>
           {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          quae sapiente nesciunt nemo officiis repellat soluta quas similique
-          neque eius maxime aliquid fugit debitis, odio, beatae in veritatis
-          cum! Quas.{" "}
+          I am currently pursuing a Bachelor's degree in Electronics and Communication Engineering. I am passionate about technology and enjoy learning about the latest developments in the field. I am excited to see where my education will take me in the future.
         </SmallText>
       </Grid>
       <List>

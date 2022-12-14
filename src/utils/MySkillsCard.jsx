@@ -36,17 +36,20 @@ const Heading = styled.p`
 `;
 const LargeText = styled.h1`
   display: flex;
+  color: #525050;
   flex: 4;
 `;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
   flex: 4;
+  line-height: 3ch;
 `;
 const Skills = styled.div`
   display: flex;
   gap: 15px;
   padding-bottom: 20px;
+  justify-content: center;
   flex-wrap: wrap;
   flex: 4;
 `;
@@ -56,13 +59,10 @@ export const MySkillsCard = () => {
       <TextSide>
         <Heading>MY SKILLS</Heading>
         <LargeText>
-          Beautiful <br /> and unique digital <br /> experience
+        Professional Skills
         </LargeText>
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-          officiis veritatis quis ducimus ab quisquam reprehenderit tempore
-          eaque et dicta quas, fugiat maiores dignissimos provident neque minus
-          deserunt maxime explicabo.
+        As a highly skilled and experienced professional, I am proficient in a range of technology-related skills and well-versed in the latest advancements in the field. I am committed to staying up-to-date with the latest trends and developments in the industry. I am confident in my ability to effectively apply my skills and knowledge to contribute to the success of any team or project.
         </SmallText>
       </TextSide>
       <Skills>

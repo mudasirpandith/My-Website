@@ -4,8 +4,9 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { Button } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
+import Mudasir from '../images/mudasir.png'
 const Container = styled.div`
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: ${({ theme }) => theme.bg};
   color: white;
   height: 100%;
@@ -30,17 +31,14 @@ const LargeText = styled.h1`
   letter-spacing: normal;
   word-spacing: normal;
   line-height: normal;
-
   color: pink;
 `;
 const SmallText = styled.p`
   display: flex;
   padding: 15px 0;
-  font-size: 18px;
+  font-size: 16px;
   flex-wrap: wrap;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
+ line-height: 3ch;
 
   color: white;
 `;
@@ -51,7 +49,7 @@ const ImageSide = styled.div`
   padding: 40px 0;
 `;
 const Image = styled.img`
-  height: 400px;
+  height: 360px;
   border-radius: 25px;
 `;
 const Buttons = styled.div`
@@ -85,9 +83,7 @@ export default function DesktopScreen() {
               />
             </LargeText>
             <SmallText>
-              I'm Full Stack Developer. I love to develop softwares and interact
-              people with it. I develop Websites,React/Flutter Apps and Machine
-              Learning Models.
+            Welcome to my website! I am a web developer with a passion for creating beautiful, functional websites that help businesses and individuals establish a professional online presence. I have been working in the industry for several years and have a wealth of experience in website design and development. I am dedicated to providing high-quality services and strive to ensure that every project I work on is a success. Thank you for visiting my site and I look forward to working with you on your next web project.
             </SmallText>
             <Buttons>
               <A href="https://twitter.com/mudasirpandith7">
@@ -101,7 +97,7 @@ export default function DesktopScreen() {
                 </Button>
               </A>
 
-              <A href="https://drive.google.com/file/d/1VdFX9pmwXe3V0qMpdtTEFaiBZ-iuVtA8/view">
+              <A href="https://drive.google.com/file/d/1i092uCjiGcS6zJI-IAYMDIlS5UleC-nH/view?usp=share_link">
                 <Button variant="outlined" color="inherit">
                   Download CV
                 </Button>
@@ -111,8 +107,8 @@ export default function DesktopScreen() {
 
           <ImageSide>
             <Image
-              src="https://media-exp1.licdn.com/dms/image/C4D03AQFv0o4-1yjKag/profile-displayphoto-shrink_400_400/0/1651503799357?e=1668038400&v=beta&t=LkDHqWbTEAWH9IXMOMf9YSBsVKnahI_uJz0kIa2ZM94"
-              alt=""
+             src={Mudasir}
+             alt="Mudasir Pandith"
             />
           </ImageSide>
         </Container>

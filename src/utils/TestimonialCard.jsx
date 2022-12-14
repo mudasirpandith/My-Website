@@ -14,10 +14,13 @@ const Comma = styled.img`
 const Details = styled.p`
   display: flex;
   color: #aaa8a9;
+  font-size: 12px;
+  line-height: 3ch;
 `;
 const User = styled.div`
   display: flex;
   gap: 10px;
+  
 `;
 const UserIcon = styled.img`
   flex: 1;
@@ -29,6 +32,7 @@ const UserName = styled.h1`
   flex: 7;
   display: flex;
   font-size: 20px;
+  color: gray;
 `;
 
 export const TestimonialCard = (props) => {

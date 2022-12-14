@@ -6,7 +6,6 @@ const Container = styled.div`
   padding-top: 60px;
   margin-top: -50px;
   z-index: -1;
-
   color: white;
 `;
 const Grid = styled.div`
@@ -16,14 +15,14 @@ const Grid = styled.div`
   flex-wrap: wrap;
   margin: auto;
   gap: 20px;
-  width: 80%;
+  width:95%;
   @media (max-width: 500px) {
     flex-direction: column;
   }
 `;
 const Branding = styled.div`
   display: flex;
-  flex: 3;
+  flex: 4;
   flex-direction: column;
 `;
 const Nav = styled.div`
@@ -34,17 +33,19 @@ const Nav = styled.div`
 `;
 const Contact = styled.div`
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: column;
 `;
 const Address = styled.div`
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: column;
 `;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
+  font-size: 12px;
+  line-height: 3ch;
 `;
 const FooterText = styled.p`
   display: flex;
@@ -77,8 +78,9 @@ export const Footer = () => {
           {" "}
           <Header>MP</Header>
           <SmallText>
-            I love to develop softwares and interact people with it. I
-            design/develop Websites,React/Flutter Apps, Logos, etc.{" "}
+          My name is Mudasir Pandith and I am a full stack MERN developer with a passion for creating innovative and user-friendly web and mobile applications. I have been working in the field of web and mobile development for many years, and I am skilled in using the latest technologies and frameworks to create high-quality products.
+
+I have expertise in using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to develop dynamic and scalable web applications. I also have experience in implementing machine learning techniques to create intelligent and predictive applications. In addition, I am skilled in using the Flutter framework to develop cross-platform mobile applications for both Android and iOS.If you have an idea for a web or mobile application and are looking for a skilled and experienced developer to bring it to life, please don't hesitate to contact me. I would be happy to discuss your project in more detail and provide you with a personalized quote. 
           </SmallText>
         </Branding>
         <Nav>

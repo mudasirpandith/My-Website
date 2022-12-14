@@ -23,11 +23,13 @@ const Grid = styled.div`
 const LargeText = styled.h1`
   display: flex;
   flex: 4;
+  color: #525050;
 `;
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
   flex: 4;
+  line-height: 3ch;
 `;
 const Services = styled.div`
   display: flex;
@@ -44,34 +46,32 @@ export const ExpertiseSection = () => {
     <Container
     
     >
-      <Heading>MY EXPERTISE</Heading>
+      <Heading>Services Offered</Heading>
       <Grid>
         <LargeText>
-          Innovative <br /> Solutions
+        Solutions We Provide.
         </LargeText>
         <SmallText>
           {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          quae sapiente nesciunt nemo officiis repellat soluta quas similique
-          neque eius maxime aliquid fugit debitis, odio, beatae in veritatis
-          cum! Quas.{" "}
+          I offer personalized website design and development services to help individuals and businesses establish a professional online presence.
+With a focus on user experience and accessibility, I can create custom websites that are tailored to meet your specific needs and goals.
         </SmallText>
       </Grid>
       <Services>
         <ServiceCards
           logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqajy5jFVLh3az4GF6IXENdHNkLDECpYiYg&usqp=CAU"
           title="Web Development"
-          details="Full Stack Websites,Landing Pages "
+          details="Build robust, scalable web and mobile applications with our full-stack development services."
         />{" "}
         <ServiceCards
           logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0qcY07VwMA45KlZ6pDfbYveClHEu9d2NOg&usqp=CAU"
           title="Data Analysis"
-          details="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+          details="Unlock the insights hidden in your data with our expert data analysis services."
         />{" "}
         <ServiceCards
           logo="https://www.kindpng.com/picc/m/255-2554071_beltech-2018-icons-webside-schedule-machine-learning-machine.png"
           title="Machine Learning"
-          details="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+          details="Unleash the power of ML on your data to drive business success with our expert services."
         />
       </Services>
     </Container>

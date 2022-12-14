@@ -62,6 +62,8 @@ const SocialHeader = styled.h1`
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
+  line-height: 3ch;
+  font-size: 14px;
   flex: 4;
   @media (max-width: 500px) {
     margin: 4px 10px;
@@ -112,10 +114,7 @@ export const BlogAndTouchIn = () => {
         <LargeText>Blog Update</LargeText>
         <SmallText>
           {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          quae sapiente nesciunt nemo officiis repellat soluta quas similique
-          neque eius maxime aliquid fugit debitis, odio, beatae in veritatis
-          cum! Quas.{" "}
+          Thank you for visiting my website. I am excited to announce that I will be starting a blog on this site very soon. In my blog, I will be sharing my thoughts and insights on the latest trends and developments in the world of web and mobile development, as well as providing tips and tutorials on how to use various technologies and frameworks to create successful applications. I hope that my blog will provide valuable information and inspiration for other developers, and I look forward to engaging with the community through my writing. Please stay tuned for more updates and new content coming soon!
         </SmallText>
       </Grid>
       <Heading>Nothing yet</Heading>
