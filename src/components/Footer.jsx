@@ -44,8 +44,11 @@ const Address = styled.div`
 const SmallText = styled.p`
   display: flex;
   color: #aaa8a9;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 3ch;
+  @media (max-width:500px) {
+    font-size: 16px;
+  }
 `;
 const FooterText = styled.p`
   display: flex;
