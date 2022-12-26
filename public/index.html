@@ -47,7 +47,15 @@
   <body >
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      
+      <div id="welcome-box"
+        style="background-color:rgb(5, 4, 4); display: flex;flex-direction: column;justify-content: center;text-align:center;">
+        <h1 class="welcome" style="color: green;">
+          Muda<span style="color: goldenrod;">sir </span> Pand<span style="color: goldenrod;">ith </span>
+        </h1>
+        <h2 style="margin: 0; color: rgb(234, 102, 102);">
+          Welcome To My Website
+        </h2>
+      </div>
 
 
      
@@ -58,7 +66,9 @@
       
     </script>
     <script>
-   
+                      let height = `${window.innerHeight}px`
+                      document.getElementById('welcome-box').style.height = height;
+
     </script>
     
   </body>
