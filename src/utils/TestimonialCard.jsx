@@ -7,6 +7,7 @@ const Container = styled.div`
   width: 250px;
   padding: 20px;
   border-radius: 10px;
+ 
 `;
 const Comma = styled.img`
   height: 20px;

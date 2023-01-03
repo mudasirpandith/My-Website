@@ -49,7 +49,7 @@ const ImageSide = styled.div`
   padding: 40px 0;
 `;
 const Image = styled.img`
-  height: 360px;
+  height: 600px;
   border-radius: 25px;
 `;
 const Buttons = styled.div`
@@ -107,7 +107,7 @@ export default function DesktopScreen() {
 
           <ImageSide>
             <Image
-             src={Mudasir}
+              src="https://nft-29rm65xpk-namyakhan.vercel.app/images/hero.svg"
              alt="Mudasir Pandith"
             />
           </ImageSide>

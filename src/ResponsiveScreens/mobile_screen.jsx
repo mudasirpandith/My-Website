@@ -1,3 +1,4 @@
+// eslint-disable-nex
 import React from "react";
 import styled from "styled-components";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -7,8 +8,8 @@ import AOS from "aos";
 import Mudasir from '../images/mudasir.png'
 const Container = styled.div`
   padding-top: 20px;
-  background-color: ${({ theme }) => theme.bg};
-  color: white;
+  background: ${({ theme }) => theme.bg};
+  color:${({ theme }) => theme.color};
   height: 100%;
   display: flex;
   border-bottom-left-radius: 30px;
@@ -40,7 +41,7 @@ const SmallText = styled.p`
   font-size: 16px;
   flex-wrap: wrap;
  line-height: 3ch;
-  color: white;
+  color:${({ theme }) => theme.color};;
 `;
 const ImageSide = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ const ImageSide = styled.div`
 `;
 const Image = styled.img`
   border-radius: 25px;
-  height:200px;
+  height:300px;
   width: 100%;
 `;
 const Buttons = styled.div`
@@ -73,7 +74,7 @@ export default function MobileScreen() {
       <Container id="home">
         <ImageSide>
           <Image
-          src={Mudasir}
+            src="https://nft-29rm65xpk-namyakhan.vercel.app/images/hero.svg"
             alt="Mudasir Pandith"
           />
         </ImageSide>
